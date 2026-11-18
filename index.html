@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>埼玉の快適な住まいを実現するフロアコーティング案内 | 株式会社Aライン</title>
-<!-- ページの説明文（ディスクリプション） -->
+  <title>埼玉の快適な住まいを実現するフロアコーティング | 株式会社Aライン</title>
+  <!-- ページの説明文（ディスクリプション） -->
   <meta name="description" content="埼玉を中心に住宅のフロアコーティングを施工する会社です。小さいながらも技術と施工に自信あり。個人経営だからできる品質の安定性、丁寧な施工があります。">
   <!-- ページのキーワード -->
   <meta name="keywords" content="床の保護,フローリング,ワックス,フロアコーティング,埼玉">
@@ -64,15 +64,15 @@
 
       <!-- PC見積りボタン＆スマホハンバーガーボタン -->
       <div class="flex items-center gap-2 sm:gap-3">
-        <a href="tel:08043588815" class="hidden lg:flex items-center gap-1.5 font-en text-xl font-extrabold text-aline-teal hover:text-aline-tealDark">
+        <a href="tel:08043588815" class="hidden lg:flex items-center gap-1.5 font-en text-sm font-extrabold text-aline-teal hover:text-aline-tealDark">
           <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
           <span>080-4358-8815</span>
         </a>
         <a href="#contact" class="hidden md:inline-flex px-4 py-2.5 rounded-xl bg-aline-teal hover:bg-aline-tealDark text-white text-xs lg:text-sm font-bold shadow-xs transition-all">
           無料お見積り
         </a>
-        <!-- スマホ表示（768px以下）ハンバーガーボタン -->
-        <button id="mobileMenuBtn" type="button" aria-expanded="false" aria-label="メニューを開く" class="md:hidden p-2.5 rounded-xl text-slate-800 hover:bg-slate-100">
+        <!-- スマホ表示ハンバーガーボタン -->
+        <button id="menuBtn" type="button" aria-expanded="false" aria-label="メニューを開く" class="md:hidden p-2.5 rounded-xl text-slate-800 hover:bg-slate-100">
           <svg id="iconHamburger" class="w-6 h-6 stroke-current" fill="none" stroke-width="2.3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
           <svg id="iconClose" class="w-6 h-6 stroke-current hidden" fill="none" stroke-width="2.3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
@@ -97,35 +97,40 @@
     <!-- 光沢のある美しい白いフローリングのリビング写真（床部分を広く鮮明に表示） -->
     <div class="relative w-full h-[58vh] min-h-[420px] sm:h-[68vh] sm:min-h-[520px] lg:h-[76vh] overflow-hidden bg-slate-100">
       <img
-        src="img/living1.jpg"
-        alt="光沢のある美しいフローリングのリビング"
+        src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=85"
+        alt="光沢のある美しい白いフローリングのリビング"
         class="w-full h-full object-cover object-bottom"
         onerror="this.src='https://placehold.co/1600x900/F1F5F9/0F172A?text=Floor+Coating+Living'"
       />
       <!-- 下部エリアのみにテキストをまとめ、床の美しい光沢を隠さない設計 -->
-      <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-white/95 via-white/70 to-transparent pt-14 pb-5 sm:pb-8 px-4 sm:px-6 lg:px-8">
+      <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-white/95 via-white/75 to-transparent pt-14 pb-5 sm:pb-8 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-end justify-between gap-4">
           <div>
             <h1 class="text-xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-slate-900 leading-snug">
-              フロアコーティングで美しさが長続き
+              フロアコーティングで住まいの美しさが長続き
             </h1>
             <p class="text-sm sm:text-lg lg:text-xl font-bold text-slate-700 mt-1">
-              ～家はメンテナンスで見た目も耐久性も変わる～
+              ～家はメンテナンス次第で見た目も耐久性も変わる～
             </p>
           </div>
-          <!-- キャッチコピー下の「快適な住まいを実現する 株式会社Aライン」＆ロゴ -->
-          <div class="inline-flex items-center gap-3 bg-white/95 px-4 py-2.5 rounded-2xl border border-slate-200 shadow-xs self-start lg:self-end shrink-0">
-            <span class="js-aline-logo w-9 h-8 inline-flex items-center justify-center"></span>
-            <div class="leading-tight">
-              <span class="block text-[11px] sm:text-xs font-bold text-aline-teal">快適な住まいを実現する</span>
-              <span class="block text-base sm:text-lg font-extrabold text-slate-900">株式会社<span class="font-en">A</span>ライン</span>
+          <!-- キャッチコピー下の「快適な住まいを実現する 株式会社Aライン」＆ロゴ・CTA -->
+          <div class="flex flex-wrap items-center gap-3 self-start lg:self-end shrink-0">
+            <div class="inline-flex items-center gap-3 bg-white/95 px-4 py-2.5 rounded-2xl border border-slate-200 shadow-xs">
+              <span class="js-aline-logo w-9 h-8 inline-flex items-center justify-center"></span>
+              <div class="leading-tight">
+                <span class="block text-[11px] sm:text-xs font-bold text-aline-teal">快適な住まいを実現する</span>
+                <span class="block text-base sm:text-lg font-extrabold text-slate-900">株式会社<span class="font-en">A</span>ライン</span>
+              </div>
             </div>
+            <a href="#contact" class="px-5 py-3.5 rounded-2xl bg-aline-teal hover:bg-aline-tealDark text-white text-xs sm:text-sm font-bold shadow-xs transition-all">
+              無料お見積り・相談
+            </a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- メイン画像すぐ下の別帯エリア：「3つの特徴」（2行コンパクト3カラム横並び・IPETCOATロゴやF4☆は非掲載） -->
+    <!-- メイン画像すぐ下の別帯エリア：「3つの特徴」（2行コンパクト3カラム横並び） -->
     <div class="bg-slate-50 border-t border-slate-200/80">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
@@ -159,15 +164,13 @@
   <section id="ipetcoat" class="py-16 sm:py-24 bg-gradient-to-b from-[#FBF4FA] to-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-      <!-- セクション見出し（高精細インラインSVGロゴ） -->
+      <!-- セクション見出し（Ipetcoat-t.png を配置） -->
       <div class="mb-10">
         <span class="inline-block text-xs font-extrabold text-aline-plum bg-aline-plumLight px-3 py-1 rounded-full mb-3">
           “ペットとの快適な暮らし” に特化したフロアコーティング
         </span>
         <div class="flex flex-wrap items-center gap-4">
-          <div>
-            <img src="img/Ipetcoat-t.png" alt="IPETCOAT / IPETCOAT"ロゴ" class="w-1/2 h-1/2" />
-          </div>
+          <div class="js-ipetcoat-img" data-size="lg"></div>
           <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">愛ペットコート</h2>
         </div>
       </div>
@@ -205,8 +208,15 @@
             </p>
           </div>
           <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-xs sm:text-sm text-slate-600 leading-relaxed">
-            ペットは具合が悪かったり痛くても言葉で伝えられないため、脱臼やねんざをしても見た目にはわかりにくく、飼い主さんが気づくまでに時間がかかることもあります。<br />
-            <strong class="inline-block mt-1.5 text-slate-900">【ペット用フロアコーティング IPETCOAT で、ペットにやさしく暮らしやすい床に！】</strong>
+            <p class="mb-3">
+              ペットは具合が悪かったり痛くても言葉で伝えられないため、脱臼やねんざをしても見た目にはわかりにくく、飼い主さんが気づくまでに時間がかかることもあります。
+            </p>
+            <!-- 締めバナー（Ipetcoat-t.png を配置） -->
+            <div class="flex flex-wrap items-center gap-2 pt-2.5 border-t border-slate-200 font-bold text-slate-900">
+              <span>【ペット用フロアコーティング</span>
+              <span class="js-ipetcoat-img inline-flex items-center" data-size="xs"></span>
+              <span>で、ペットにやさしく暮らしやすい床に！】</span>
+            </div>
           </div>
         </div>
       </div>
@@ -220,7 +230,7 @@
               <div>
                 <span class="text-xs font-bold text-slate-500 block mb-1">ペット用コーティング</span>
                 <div class="flex items-center gap-2">
-                  <div class="js-ipetcoat-logo" data-size="sm"></div>
+                  <div class="js-ipetcoat-img" data-size="sm"></div>
                   <span class="font-en text-2xl sm:text-3xl font-extrabold text-slate-800">/ U</span>
                 </div>
                 <span class="text-sm font-bold text-slate-700 mt-1 block">UVコーティング（30年耐久・10年保証）</span>
@@ -268,7 +278,7 @@
               <div>
                 <span class="text-xs font-bold text-slate-500 block mb-1">ペット用コーティング</span>
                 <div class="flex items-center gap-2">
-                  <div class="js-ipetcoat-logo" data-size="sm"></div>
+                  <div class="js-ipetcoat-img" data-size="sm"></div>
                   <span class="font-en text-2xl sm:text-3xl font-extrabold text-slate-800">/ S</span>
                 </div>
                 <span class="text-sm font-bold text-slate-700 mt-1 block">シリコンコーティング（15年耐久・5年保証）</span>
@@ -572,28 +582,26 @@
     </svg>`;
     document.querySelectorAll('.js-aline-logo').forEach(el => { el.innerHTML = alineLogoSVG; });
 
-    // 2. 高精細「愛ペットコート IPETCOAT」インラインSVG描画（#86198f・Pの肉球・Tの犬シルエット）
-    function getIpetcoatSVG(heightClass) {
-      return `<svg viewBox="0 0 650 175" class="${heightClass} w-auto shrink-0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="愛ペットコート IPETCOAT ロゴ">
-        <text x="86" y="38" font-family="'Noto Sans JP', sans-serif" font-size="33" font-weight="700" fill="#231815" letter-spacing="8">愛ペットコート</text>
-        <g fill="#86198f"><rect x="12" y="18" width="42" height="16" rx="8"/><rect x="21" y="26" width="24" height="130" rx="3"/><rect x="12" y="148" width="42" height="16" rx="8"/></g>
-        <g>
-          <path d="M76,60 h52 c28,0 48,16 48,40 c0,24 -20,40 -48,40 h-24 v24 h-28 z" fill="#86198f"/>
-          <rect x="70" y="60" width="38" height="13" rx="6" fill="#86198f"/>
-          <rect x="70" y="150" width="38" height="13" rx="6" fill="#86198f"/>
-          <ellipse cx="128" cy="105" rx="11" ry="8" fill="#FFFFFF"/>
-          <ellipse cx="115" cy="94" rx="3.6" ry="5" transform="rotate(-22 115 94)" fill="#FFFFFF"/>
-          <ellipse cx="123.5" cy="89" rx="3.8" ry="5.2" transform="rotate(-7 123.5 89)" fill="#FFFFFF"/>
-          <ellipse cx="133" cy="89" rx="3.8" ry="5.2" transform="rotate(7 133 89)" fill="#FFFFFF"/>
-          <ellipse cx="141" cy="94" rx="3.6" ry="5" transform="rotate(22 141 94)" fill="#FFFFFF"/>
-        </g>
-        <g fill="#86198f"><rect x="186" y="60" width="70" height="15" rx="6"/><rect x="192" y="66" width="24" height="92" rx="3"/><rect x="210" y="103" width="36" height="14" rx="4"/><rect x="186" y="148" width="72" height="15" rx="6"/></g>
-        <path d="M312,52 C328,52 337,58 344,67 C355,78 358,91 351,96 C346,100 339,93 334,84 L333,142 C333,149 337,153 347,153 C362,153 374,146 382,139 C386,136 390,140 385,146 C375,160 352,166 329,163 L293,163 C285,163 285,153 293,150 L296,84 C291,93 284,100 279,96 C272,91 275,78 286,67 C293,58 301,52 312,52 Z" fill="#86198f"/>
-        <text x="396" y="161" font-family="Georgia, serif" font-size="128" font-weight="900" fill="#86198f" letter-spacing="2">COAT</text>
-      </svg>`;
+    // 2. IPETCOAT画像（Ipetcoat-t.png）の配置＆未配置時プレビュー用フォールバック
+    // ※同じフォルダに「Ipetcoat-t.png」を置くとそのまま透過画像が表示されます
+    function handleIpetcoatFallback(imgEl, size) {
+      const box = imgEl.parentElement;
+      if (!box) return;
+      const textSizes = {
+        lg: { sub: 'text-xs sm:text-sm', main: 'text-3xl sm:text-4xl' },
+        sm: { sub: 'text-[10px]', main: 'text-xl sm:text-2xl' },
+        xs: { sub: 'text-[9px]', main: 'text-base' }
+      }[size] || { sub: 'text-[10px]', main: 'text-xl' };
+      box.innerHTML = `<span class="inline-flex flex-col leading-none select-none px-2 py-1 rounded-lg bg-aline-plumLight/60 border border-purple-200/80">
+        <span class="${textSizes.sub} font-bold text-slate-800 tracking-widest pl-2">愛ペットコート</span>
+        <span class="${textSizes.main} font-serif font-black text-aline-plum tracking-tight">IPETCOAT</span>
+      </span>`;
     }
-    document.querySelectorAll('.js-ipetcoat-logo').forEach(el => {
-      el.innerHTML = getIpetcoatSVG(el.dataset.size === 'lg' ? 'h-14 sm:h-20' : 'h-10 sm:h-11');
+
+    document.querySelectorAll('.js-ipetcoat-img').forEach(el => {
+      const size = el.dataset.size || 'sm';
+      const heightClass = size === 'lg' ? 'h-14 sm:h-20' : (size === 'xs' ? 'h-8' : 'h-10 sm:h-11');
+      el.innerHTML = `<img src="Ipetcoat-t.png" alt="愛ペットコート IPETCOAT" class="${heightClass} w-auto object-contain shrink-0" onerror="handleIpetcoatFallback(this, '${size}')" />`;
     });
 
     // 3. 5段階レーダーチャート精密描画（頂点順：上=耐久性, 右上=耐傷, 右下=価格, 左下=防滑, 左上=光沢）
@@ -737,7 +745,7 @@
     </div>`).join('');
 
     // 9. スマホハンバーガーメニュー＆モーダル開閉処理
-    const menuBtn = document.getElementById('mobileMenuBtn');
+    const menuBtn = document.getElementById('menuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
     const iconHam = document.getElementById('iconHamburger');
     const iconClose = document.getElementById('iconClose');
