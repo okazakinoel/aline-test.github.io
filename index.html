@@ -131,28 +131,51 @@
     </div>
 
     <!-- メイン画像すぐ下の別帯エリア：「3つの特徴」（2行コンパクト3カラム横並び） -->
-    <div class="bg-slate-50 border-t border-slate-200/80">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
-          <div class="bg-white rounded-2xl px-4 py-3.5 border border-slate-200 shadow-2xs flex items-center gap-3.5">
-            <span class="w-9 h-9 rounded-xl bg-aline-tealLight text-aline-teal flex items-center justify-center shrink-0 font-en font-extrabold text-sm">01</span>
-            <div>
-              <h2 class="text-sm font-extrabold text-slate-900 leading-snug">高い防滑性でケガの予防</h2>
-              <p class="text-xs text-slate-600 mt-0.5 leading-snug">滑りにくい特殊塗膜で、ご家族や室内犬の転倒・関節負担を軽減</p>
+    <!-- トップ画像のすぐ下：コンパクトな3列カード「3つの特徴」（タイトル＋短い説明文の2行のみ） -->
+    <div class="bg-slate-50/90 border-t border-slate-200/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 sm:py-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 sm:gap-4">
+          <!-- 特徴 1 -->
+          <div class="bg-white rounded-2xl px-4 py-3.5 border border-slate-200/90 shadow-2xs flex items-center gap-3.5">
+            <span class="w-9 h-9 rounded-xl bg-aline-plumLight text-aline-plum flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                <ellipse cx="12" cy="15.5" rx="4.5" ry="3.5"/>
+                <ellipse cx="6.5" cy="10.5" rx="1.8" ry="2.5" transform="rotate(-20 6.5 10.5)"/>
+                <ellipse cx="10" cy="8" rx="1.8" ry="2.6" transform="rotate(-6 10 8)"/>
+                <ellipse cx="14" cy="8" rx="1.8" ry="2.6" transform="rotate(6 14 8)"/>
+                <ellipse cx="17.5" cy="10.5" rx="1.8" ry="2.5" transform="rotate(20 17.5 10.5)"/>
+              </svg>
+            </span>
+            <div class="min-w-0">
+              <h2 class="text-sm font-extrabold text-slate-900 truncate">ペットに優しい高い防滑性</h2>
+              <p class="text-xs text-slate-600 mt-0.5 truncate">足腰への負担やケガを予防</p>
             </div>
           </div>
-          <div class="bg-white rounded-2xl px-4 py-3.5 border border-slate-200 shadow-2xs flex items-center gap-3.5">
-            <span class="w-9 h-9 rounded-xl bg-aline-blueLight text-aline-blue flex items-center justify-center shrink-0 font-en font-extrabold text-sm">02</span>
-            <div>
-              <h2 class="text-sm font-extrabold text-slate-900 leading-snug">優れた撥水性で手入れが簡単</h2>
-              <p class="text-xs text-slate-600 mt-0.5 leading-snug">水や油・汚れの浸透を防ぎ、サッと拭くだけで清潔な床を維持</p>
+
+          <!-- 特徴 2 -->
+          <div class="bg-white rounded-2xl px-4 py-3.5 border border-slate-200/90 shadow-2xs flex items-center gap-3.5">
+            <span class="w-9 h-9 rounded-xl bg-aline-blueLight text-aline-blue flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 stroke-current" fill="none" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l7 3v6c0 4.5-3 8.2-7 9-4-.8-7-4.5-7-9V6l7-3z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/>
+              </svg>
+            </span>
+            <div class="min-w-0">
+              <h2 class="text-sm font-extrabold text-slate-900 truncate">最長30年耐久・安心保証</h2>
+              <p class="text-xs text-slate-600 mt-0.5 truncate">長期耐久と施工後の無償補修保証</p>
             </div>
           </div>
-          <div class="bg-white rounded-2xl px-4 py-3.5 border border-slate-200 shadow-2xs flex items-center gap-3.5">
-            <span class="w-9 h-9 rounded-xl bg-aline-tealLight text-aline-teal flex items-center justify-center shrink-0 font-en font-extrabold text-sm">03</span>
-            <div>
-              <h2 class="text-sm font-extrabold text-slate-900 leading-snug">最長30年耐久・安心の施工保証</h2>
-              <p class="text-xs text-slate-600 mt-0.5 leading-snug">新築から在宅・集合住宅まで対応、施工不良は無償補修でサポート</p>
+
+          <!-- 特徴 3 -->
+          <div class="bg-white rounded-2xl px-4 py-3.5 border border-slate-200/90 shadow-2xs flex items-center gap-3.5">
+            <span class="w-9 h-9 rounded-xl bg-aline-tealLight text-aline-teal flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 stroke-current" fill="none" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9.5z"/>
+              </svg>
+            </span>
+            <div class="min-w-0">
+              <h2 class="text-sm font-extrabold text-slate-900 truncate">新築から在宅・集合住宅まで</h2>
+              <p class="text-xs text-slate-600 mt-0.5 truncate">お住まいの状況に合わせた柔軟対応</p>
             </div>
           </div>
         </div>
