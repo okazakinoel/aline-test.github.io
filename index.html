@@ -65,7 +65,7 @@
       <!-- PC見積りボタン＆スマホハンバーガーボタン -->
       <div class="flex items-center gap-2 sm:gap-3">
         <a href="tel:08043588815" class="hidden lg:flex items-center gap-1.5 font-en text-xl font-extrabold text-aline-teal hover:text-aline-tealDark">
-          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
           <span>080-4358-8815</span>
         </a>
         <a href="#contact" class="hidden md:inline-flex px-4 py-2.5 rounded-xl bg-aline-teal hover:bg-aline-tealDark text-white text-xs lg:text-sm font-bold shadow-xs transition-all">
@@ -94,23 +94,25 @@
 
   <!-- ==================== 2. ファーストビュー（1ページ目・表紙構成） ==================== -->
   <section id="top" class="pt-16 bg-white border-b border-slate-200">
-    <!-- 光沢のある美しいフローリングのリビング写真（床部分を広く鮮明に表示） -->
+    <!-- トップ画像（Googleドライブ画像） -->
     <div class="relative w-full h-[58vh] min-h-[420px] sm:h-[68vh] sm:min-h-[520px] lg:h-[76vh] overflow-hidden bg-slate-100">
       <img
-        src="img/living1.jpg"
+        src="https://drive.google.com/thumbnail?id=1dD-RmIHgf8Rcs6WV_5mlbkKyAyFBrLld&sz=w2000"
         alt="光沢のある美しい白いフローリングのリビング"
         class="w-full h-full object-cover object-bottom"
-        onerror="this.src='https://placehold.co/1600x900/F1F5F9/0F172A?text=Floor+Coating+Living'"
+        data-drive-id="1dD-RmIHgf8Rcs6WV_5mlbkKyAyFBrLld"
+        data-fallback-idx="0"
+        onerror="handleDriveFallback(this, 2000, 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=85')"
       />
       <!-- 下部エリアのみにテキストをまとめ、床の美しい光沢を隠さない設計 -->
       <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-white/95 via-white/75 to-transparent pt-14 pb-5 sm:pb-8 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-end justify-between gap-4">
           <div>
             <h1 class="text-xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-slate-900 leading-snug">
-              フロアコーティングで美しさが長続き
+              フロアコーティングで住まいの美しさが長続き
             </h1>
             <p class="text-sm sm:text-lg lg:text-xl font-bold text-slate-700 mt-1">
-              ～家はメンテナンスで見た目も耐久性も変わる～
+              ～家はメンテナンス次第で見た目も耐久性も変わる～
             </p>
           </div>
           <!-- キャッチコピー下の「快適な住まいを実現する 株式会社Aライン」＆ロゴ・CTA -->
@@ -130,52 +132,32 @@
       </div>
     </div>
 
-    <!-- メイン画像すぐ下の別帯エリア：「3つの特徴」（2行コンパクト3カラム横並び） -->
-    <!-- トップ画像のすぐ下：コンパクトな3列カード「3つの特徴」（タイトル＋短い説明文の2行のみ） -->
-    <div class="bg-slate-50/90 border-t border-slate-200/80">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 sm:py-6">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 sm:gap-4">
-          <!-- 特徴 1 -->
-          <div class="bg-white rounded-2xl px-4 py-3.5 border border-slate-200/90 shadow-2xs flex items-center gap-3.5">
-            <span class="w-9 h-9 rounded-xl bg-aline-plumLight text-aline-plum flex items-center justify-center shrink-0">
-              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
-                <ellipse cx="12" cy="15.5" rx="4.5" ry="3.5"/>
-                <ellipse cx="6.5" cy="10.5" rx="1.8" ry="2.5" transform="rotate(-20 6.5 10.5)"/>
-                <ellipse cx="10" cy="8" rx="1.8" ry="2.6" transform="rotate(-6 10 8)"/>
-                <ellipse cx="14" cy="8" rx="1.8" ry="2.6" transform="rotate(6 14 8)"/>
-                <ellipse cx="17.5" cy="10.5" rx="1.8" ry="2.5" transform="rotate(20 17.5 10.5)"/>
-              </svg>
-            </span>
-            <div class="min-w-0">
-              <h2 class="text-sm font-extrabold text-slate-900 truncate">ペットに優しい高い防滑性</h2>
-              <p class="text-xs text-slate-600 mt-0.5 truncate">足腰への負担やケガを予防</p>
+    <!-- メイン画像すぐ下の別帯エリア：「3つの特徴」（中央にペットの項目を配置） -->
+    <div class="bg-slate-50 border-t border-slate-200/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
+          <!-- 左：最長30年耐久・安心の施工保証 -->
+          <div class="bg-white rounded-2xl px-4 py-3.5 border border-slate-200 shadow-2xs flex items-center gap-3.5">
+            <span class="w-9 h-9 rounded-xl bg-aline-blueLight text-aline-blue flex items-center justify-center shrink-0 font-en font-extrabold text-sm">01</span>
+            <div>
+              <h2 class="text-sm font-extrabold text-slate-900 leading-snug">最長30年耐久・安心の施工保証</h2>
+              <p class="text-[13.5px] text-slate-600 mt-0.5 leading-snug">新築から在宅・集合住宅まで対応、施工不良は無償補修でサポート</p>
             </div>
           </div>
-
-          <!-- 特徴 2 -->
-          <div class="bg-white rounded-2xl px-4 py-3.5 border border-slate-200/90 shadow-2xs flex items-center gap-3.5">
-            <span class="w-9 h-9 rounded-xl bg-aline-blueLight text-aline-blue flex items-center justify-center shrink-0">
-              <svg class="w-5 h-5 stroke-current" fill="none" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l7 3v6c0 4.5-3 8.2-7 9-4-.8-7-4.5-7-9V6l7-3z"/>
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/>
-              </svg>
-            </span>
-            <div class="min-w-0">
-              <h2 class="text-sm font-extrabold text-slate-900 truncate">最長30年耐久・安心保証</h2>
-              <p class="text-xs text-slate-600 mt-0.5 truncate">長期耐久と施工後の無償補修保証</p>
+          <!-- 中央：高い防滑性でケガの予防（ペットの項目） -->
+          <div class="bg-white rounded-2xl px-4 py-3.5 border border-slate-200 shadow-2xs flex items-center gap-3.5">
+            <span class="w-9 h-9 rounded-xl bg-aline-plumLight text-aline-plum flex items-center justify-center shrink-0 font-en font-extrabold text-sm">02</span>
+            <div>
+              <h2 class="text-sm font-extrabold text-slate-900 leading-snug">高い防滑性でペットも安心</h2>
+              <p class="text-[13.5px] text-slate-600 mt-0.5 leading-snug">滑りにくい特殊塗膜で、ご家族や室内犬の転倒・関節負担を軽減</p>
             </div>
           </div>
-
-          <!-- 特徴 3 -->
-          <div class="bg-white rounded-2xl px-4 py-3.5 border border-slate-200/90 shadow-2xs flex items-center gap-3.5">
-            <span class="w-9 h-9 rounded-xl bg-aline-tealLight text-aline-teal flex items-center justify-center shrink-0">
-              <svg class="w-5 h-5 stroke-current" fill="none" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9.5z"/>
-              </svg>
-            </span>
-            <div class="min-w-0">
-              <h2 class="text-sm font-extrabold text-slate-900 truncate">新築から在宅・集合住宅まで</h2>
-              <p class="text-xs text-slate-600 mt-0.5 truncate">お住まいの状況に合わせた柔軟対応</p>
+          <!-- 右：優れた撥水性で手入れが簡単 -->
+          <div class="bg-white rounded-2xl px-4 py-3.5 border border-slate-200 shadow-2xs flex items-center gap-3.5">
+            <span class="w-9 h-9 rounded-xl bg-aline-tealLight text-aline-teal flex items-center justify-center shrink-0 font-en font-extrabold text-sm">03</span>
+            <div>
+              <h2 class="text-sm font-extrabold text-slate-900 leading-snug">優れた撥水性で手入れが簡単</h2>
+              <p class="text-[13.5px] text-slate-600 mt-0.5 leading-snug">水や油・汚れの浸透を防ぎ、サッと拭くだけで清潔な床を維持</p>
             </div>
           </div>
         </div>
@@ -184,12 +166,12 @@
   </section>
 
   <!-- ==================== 3. 愛ペットコート（IPETCOAT）セクション（2〜3ページ目構成） ==================== -->
-  <section id="ipetcoat" class="py-16 sm:py-24 bg-gradient-to-b from-[#FBF4FA] to-white border-b border-slate-200;">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style="margin:-40px 0 0 0 0;">
+  <section id="ipetcoat" class="py-8 sm:py-12 bg-gradient-to-b from-[#FBF4FA] to-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-      <!-- セクション見出し（Ipetcoat-t.png を配置） -->
-      <div class="mb-10" style="margin:-40px 0 0 0;">
-        <span class="inline-block text-xs font-extrabold text-aline-plum bg-aline-plumLight px-3 py-1 rounded-full mb-3">
+      <!-- セクション見出し（Googleドライブ IPETCOATロゴを配置） -->
+      <div class="mb-5">
+        <span class="inline-block text-xs font-extrabold text-aline-plum bg-aline-plumLight px-3 py-1 rounded-full mb-2">
           “ペットとの快適な暮らし” に特化したフロアコーティング
         </span>
         <div class="flex flex-wrap items-center gap-4">
@@ -199,16 +181,18 @@
       </div>
 
       <!-- 室内犬のケガ予防解説 & ワンちゃん写真 -->
-      <div class="bg-white rounded-3xl shadow-xs border border-purple-100 overflow-hidden mb-14 grid grid-cols-1 lg:grid-cols-12">
-        <div class="lg:col-span-6 relative min-h-[340px] sm:min-h-[420px]">
+      <div class="bg-white rounded-3xl shadow-xs border border-purple-100 overflow-hidden mb-7 grid grid-cols-1 lg:grid-cols-12">
+        <div class="lg:col-span-6 relative min-h-[340px] sm:min-h-[400px] overflow-hidden">
           <img
-            src="img/pet-floring2.jpg"
+            src="https://drive.google.com/thumbnail?id=1Wuj09Z5E-dMUuJ39Lvhla7gLIK411J9h&sz=w1200"
             alt="木質フローリングの上でくつろぐ愛犬"
-            class="w-full h-full object-cover"
-            onerror="this.src='https://placehold.co/800x600/F9EBF8/86198f?text=IPETCOAT'"
+            class="absolute inset-0 w-full h-full object-cover object-[50%_85%] scale-125 origin-bottom"
+            data-drive-id="1Wuj09Z5E-dMUuJ39Lvhla7gLIK411J9h"
+            data-fallback-idx="0"
+            onerror="handleDriveFallback(this, 1200, 'https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=900&q=80')"
           />
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-900/20 to-transparent flex flex-col justify-end p-6 sm:p-8 text-white">
-            <p class="text-sm sm:text-base font-bold mb-3 leading-relaxed">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-900/20 to-transparent flex flex-col justify-end p-5 sm:p-7 text-white">
+            <p class="text-[15.5px] sm:text-[17.5px] font-bold mb-3 leading-relaxed">
               現在の新築住宅の床は木質フローリングが主流ですが、ペット、特に室内犬にとってはストレスやケガの原因になることも
             </p>
             <div class="flex flex-wrap gap-2 text-xs font-bold text-slate-900">
@@ -219,32 +203,35 @@
           </div>
         </div>
 
-        <div class="lg:col-span-6 p-6 sm:p-10 flex flex-col justify-center">
+        <div class="lg:col-span-6 p-5 sm:p-8 flex flex-col justify-center">
           <span class="text-aline-plum font-bold text-sm mb-2">“ペットとの快適な暮らし” に特化したフロアコーティング</span>
-          <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-snug mb-5">
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-snug mb-4">
             【愛<span class="text-xs align-top">アイ</span>ペットコート】で<br />人もペットもストレスのない住まいに！
           </h3>
-          <div class="bg-aline-plumLight/80 border border-purple-200 rounded-2xl p-5 mb-4">
+          <div class="bg-aline-plumLight/80 border border-purple-200 rounded-2xl p-4 sm:p-5 mb-3.5">
             <h4 class="font-bold text-aline-plum text-base mb-2">室内犬のケガに多い「骨折・ねんざ・脱臼」の原因とは？</h4>
-            <p class="text-sm text-slate-700 leading-relaxed">
+            <p class="text-[15.5px] text-slate-700 leading-relaxed">
               一般的なフローリングは犬の爪がかかりにくいため、踏ん張りがきかず転倒したり、ソファや段差からの飛び降り時に着地に失敗するなど、<strong>犬に適さない滑りやすい床</strong>が原因になることが多いと言われています。
             </p>
           </div>
-          <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-sm sm:text-sm text-slate-600 leading-relaxed">
+          <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 text-[13.5px] sm:text-[15.5px] text-slate-600 leading-relaxed">
             <p class="mb-3">
               ペットは具合が悪かったり痛くても言葉で伝えられないため、脱臼やねんざをしても見た目にはわかりにくく、飼い主さんが気づくまでに時間がかかることもあります。
             </p>
-            
+            <!-- 締めバナー（テキスト表記） -->
+            <div class="pt-2.5 border-t border-slate-200 font-bold text-slate-900">
+              【ペット用フロアコーティング 愛ペットコート IPETCOAT で、ペットにやさしく暮らしやすい床に！】
+            </div>
           </div>
         </div>
       </div>
 
       <!-- IPETCOAT / U & IPETCOAT / S 比較カード -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
         <!-- IPETCOAT / U（UVコーティング） -->
-        <article class="bg-white rounded-3xl shadow-xs border border-purple-100 p-6 sm:p-8 flex flex-col justify-between">
+        <article class="bg-white rounded-3xl shadow-xs border border-purple-100 p-5 sm:p-6 flex flex-col justify-between">
           <div>
-            <div class="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-200">
+            <div class="flex flex-wrap items-center justify-between gap-3 pb-3.5 border-b border-slate-200">
               <div>
                 <span class="text-xs font-bold text-slate-500 block mb-1">ペット用コーティング</span>
                 <div class="flex items-center gap-2">
@@ -259,18 +246,25 @@
               </div>
             </div>
 
-            <div class="my-5 h-48 rounded-2xl overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=80" alt="IPETCOAT / U UVコーティング施工イメージ" class="w-full h-full object-cover" />
+            <div class="my-4 h-48 rounded-2xl overflow-hidden">
+              <img
+                src="https://drive.google.com/thumbnail?id=1NeCbY1EO1Hnj_1YjM7cu1_8DcvWX9xWM&sz=w1000"
+                alt="IPETCOAT / U UVコーティング施工イメージ"
+                class="w-full h-full object-cover"
+                data-drive-id="1NeCbY1EO1Hnj_1YjM7cu1_8DcvWX9xWM"
+                data-fallback-idx="0"
+                onerror="handleDriveFallback(this, 1000, 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=80')"
+              />
             </div>
 
-            <p class="text-sm text-slate-600 leading-relaxed mb-5">
+            <p class="text-[15.5px] text-slate-600 leading-relaxed mb-4">
               ペット用UVコーティングは、防滑性はもちろん、防汚・撥水性を高めたコーティング。食べこぼしや万一の粗相も床に浸透しにくくなり、拭き掃除も簡単にでき床の劣化を防ぎます。
             </p>
 
-            <div class="grid grid-cols-1 sm:grid-cols-12 gap-4 items-center bg-slate-50 rounded-2xl p-4 mb-5 border border-slate-200/70">
+            <div class="grid grid-cols-1 sm:grid-cols-12 gap-4 items-center bg-slate-50 rounded-2xl p-4 mb-4 border border-slate-200/70">
               <div class="sm:col-span-6">
                 <span class="inline-block px-3 py-1 rounded-full bg-aline-plum text-white text-xs font-bold mb-3">おすすめポイント</span>
-                <ol class="space-y-2 text-sm font-bold text-slate-800">
+                <ol class="space-y-2 text-[15px] font-bold text-slate-800">
                   <li class="flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-purple-200 text-aline-plum text-xs flex items-center justify-center">1</span>粗相のお掃除も簡単</li>
                   <li class="flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-purple-200 text-aline-plum text-xs flex items-center justify-center">2</span>ペットに優しい防滑性</li>
                   <li class="flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-purple-200 text-aline-plum text-xs flex items-center justify-center">3</span>30年耐久</li>
@@ -290,9 +284,9 @@
         </article>
 
         <!-- IPETCOAT / S（シリコンコーティング） -->
-        <article class="bg-white rounded-3xl shadow-xs border border-purple-100 p-6 sm:p-8 flex flex-col justify-between">
+        <article class="bg-white rounded-3xl shadow-xs border border-purple-100 p-5 sm:p-6 flex flex-col justify-between">
           <div>
-            <div class="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-200">
+            <div class="flex flex-wrap items-center justify-between gap-3 pb-3.5 border-b border-slate-200">
               <div>
                 <span class="text-xs font-bold text-slate-500 block mb-1">ペット用コーティング</span>
                 <div class="flex items-center gap-2">
@@ -307,18 +301,25 @@
               </div>
             </div>
 
-            <div class="my-5 h-48 rounded-2xl overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="IPETCOAT / S シリコンコーティング施工イメージ" class="w-full h-full object-cover" />
+            <div class="my-4 h-48 rounded-2xl overflow-hidden">
+              <img
+                src="https://drive.google.com/thumbnail?id=1Bu-Tz8J1cEA_sG10K125jQ4httG9lhTI&sz=w1000"
+                alt="IPETCOAT / S シリコンコーティング施工イメージ"
+                class="w-full h-full object-cover object-[0%_75%]"
+                data-drive-id="1Bu-Tz8J1cEA_sG10K125jQ4httG9lhTI"
+                data-fallback-idx="0"
+                onerror="handleDriveFallback(this, 1000, 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80')"
+              />
             </div>
 
-            <p class="text-sm text-slate-600 leading-relaxed mb-5">
+            <p class="text-[15.5px] text-slate-600 leading-relaxed mb-4">
               ペット用シリコンコーティングは、防滑性・防汚・撥水性を兼ね備えた、ペット用のリーズナブルなコーティング。<strong>ホルムアルデヒド放射等級 F4☆</strong>、安全性も高いのでペットが舐めてしまっても安心。
             </p>
 
-            <div class="grid grid-cols-1 sm:grid-cols-12 gap-4 items-center bg-slate-50 rounded-2xl p-4 mb-5 border border-slate-200/70">
+            <div class="grid grid-cols-1 sm:grid-cols-12 gap-4 items-center bg-slate-50 rounded-2xl p-4 mb-4 border border-slate-200/70">
               <div class="sm:col-span-6">
                 <span class="inline-block px-3 py-1 rounded-full bg-aline-plum text-white text-xs font-bold mb-3">おすすめポイント</span>
-                <ol class="space-y-2 text-sm font-bold text-slate-800">
+                <ol class="space-y-2 text-[15px] font-bold text-slate-800">
                   <li class="flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-purple-200 text-aline-plum text-xs flex items-center justify-center">1</span>ペットに優しい防滑性</li>
                   <li class="flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-purple-200 text-aline-plum text-xs flex items-center justify-center">2</span>コストパフォーマンス</li>
                   <li class="flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-purple-200 text-aline-plum text-xs flex items-center justify-center">3</span>お掃除がラク</li>
@@ -341,21 +342,21 @@
   </section>
 
   <!-- ==================== 4. Splash Coat・その他フロアコーティング・安心の施工保証内容（4ページ目構成） ==================== -->
-  <section id="lineup" class="py-16 sm:py-24 bg-slate-50 border-b border-slate-200">
+  <section id="lineup" class="py-7 sm:py-10 bg-slate-50 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <!-- Splash Coat -->
-      <div class="bg-white rounded-3xl shadow-xs border border-blue-100 p-6 sm:p-10 mb-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <div class="bg-white rounded-3xl shadow-xs border border-blue-100 p-5 sm:p-8 mb-7 grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
         <div class="lg:col-span-5">
           <span class="text-xs font-bold text-aline-blue">スプラッシュコート</span>
           <h2 class="font-en text-3xl sm:text-4xl font-extrabold text-aline-blue mt-1">Splash Coat</h2>
-          <p class="text-sm font-bold text-slate-700 mt-1 pb-4 border-b border-slate-200">シリコンコーティング（15年耐久・5年保証）</p>
-          <p class="text-sm text-slate-600 leading-relaxed my-4">
+          <p class="text-sm font-bold text-slate-700 mt-1 pb-3 border-b border-slate-200">シリコンコーティング（15年耐久・5年保証）</p>
+          <p class="text-[15.5px] text-slate-600 leading-relaxed my-3.5">
             耐久年数はUVより短くなりますが、手軽な価格でフロアコーティングをされたい、価格重視の方に人気のコーティング！コストパフォーマンスに優れたフロアコーティングです。
           </p>
-          <div class="bg-aline-blueLight/75 rounded-2xl p-4 mb-4">
-            <span class="inline-block px-3 py-1 rounded-full bg-aline-blue text-white text-xs font-bold mb-2.5">おすすめポイント</span>
-            <ol class="space-y-1.5 text-sm font-bold text-slate-800">
+          <div class="bg-aline-blueLight/75 rounded-2xl p-4 mb-3.5">
+            <span class="inline-block px-3 py-1 rounded-full bg-aline-blue text-white text-xs font-bold mb-2">おすすめポイント</span>
+            <ol class="space-y-1.5 text-[15px] font-bold text-slate-800">
               <li>1. コストパフォーマンス</li>
               <li>2. 適度な光沢</li>
               <li>3. 撥水性</li>
@@ -364,7 +365,7 @@
           <div class="flex flex-col sm:flex-row items-center justify-between gap-3 bg-slate-50 rounded-2xl p-4 border border-slate-200/70">
             <div>
               <span class="inline-block bg-slate-900 text-white text-xs font-bold px-2.5 py-1 rounded mb-2">Splash Coat</span>
-              <p class="text-xs text-slate-600 leading-relaxed">適度な光沢と撥水性能に加え、シリコンコーティングならではの防滑性もある、低価格ながらバランスの良いコーティング。</p>
+              <p class="text-[13.5px] text-slate-600 leading-relaxed">適度な光沢と撥水性能に加え、シリコンコーティングならではの防滑性もある、低価格ながらバランスの良いコーティング。</p>
             </div>
             <!-- Splash Coat：耐久性 2 / 耐傷 2 / 価格 2 / 防滑 4 / 光沢 4 -->
             <div class="js-radar shrink-0" data-scores="2,2,2,4,4" data-color="#075394" data-fill="rgba(7,83,148,0.36)" data-label="Splash Coat"></div>
@@ -381,15 +382,15 @@
       </div>
 
       <!-- その他フロアコーティング3種 & 安心の施工保証内容 -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        <div class="lg:col-span-6 bg-white rounded-3xl p-6 sm:p-8 shadow-xs border border-slate-200">
-          <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 mb-5 flex items-center gap-2.5">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-6 bg-white rounded-3xl p-5 sm:p-7 shadow-xs border border-slate-200">
+          <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 mb-4 flex items-center gap-2.5">
             <span class="w-1.5 h-6 bg-slate-800 rounded-full"></span>その他フロアコーティング
           </h3>
           <div id="otherCoatingsGrid" class="grid grid-cols-1 sm:grid-cols-3 gap-4"></div>
         </div>
 
-        <div class="lg:col-span-6 bg-white rounded-3xl p-6 sm:p-8 shadow-xs border border-slate-200 flex flex-col justify-between">
+        <div class="lg:col-span-6 bg-white rounded-3xl p-5 sm:p-7 shadow-xs border border-slate-200 flex flex-col justify-between">
           <div>
             <div class="flex flex-wrap items-baseline justify-between gap-2 mb-3">
               <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 flex items-center gap-2.5">
@@ -397,13 +398,13 @@
               </h3>
               <span class="text-xs text-slate-500">※保証期間はコーティングの種類により異なります</span>
             </div>
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+            <p class="text-[13.5px] sm:text-[15.5px] text-slate-600 leading-relaxed mb-4">
               弊社のフロアコーティングには以下の施工保証が付帯しております。万一、保証期間中に以下記載の施工不良が発生した場合は<strong>無償で補修</strong>を行います。品質には責任を持って施工いたしますのでご安心ください。
             </p>
           </div>
           <div class="bg-aline-tealLight/65 rounded-2xl p-4 border border-aline-teal/20">
             <div class="text-xs font-extrabold text-aline-teal mb-2">【フロアコーティングの保証内容】</div>
-            <ul class="space-y-1.5 text-xs font-bold text-slate-800">
+            <ul class="space-y-1.5 text-[13.5px] font-bold text-slate-800">
               <li>● コーティング塗膜の密着不良による剥がれ</li>
               <li>● 施工範囲の塗り残し、かすれ</li>
               <li>● アルコール（除光液）、洗剤使用による剥がれや白濁</li>
@@ -416,58 +417,58 @@
   </section>
 
   <!-- ==================== 5. オプション施工（全7項目・5ページ目構成） ==================== -->
-  <section id="options" class="py-16 sm:py-24 bg-white border-b border-slate-200">
+  <section id="options" class="py-7 sm:py-10 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-12">
-        <span class="inline-block px-3.5 py-1 rounded-full bg-aline-tealLight text-aline-teal text-xs font-bold mb-3">
+      <div class="text-center max-w-3xl mx-auto mb-6">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-aline-tealLight text-aline-teal text-xs font-bold mb-2">
           フロアコーティングと同日施工がオトクでおすすめ！
         </span>
         <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900">オプション施工</h2>
-        <p class="text-sm sm:text-base text-slate-600 mt-3">
+        <p class="text-[15.5px] sm:text-[17px] text-slate-600 mt-2.5">
           日々の掃除や手入れがラクになり、快適な空間を維持するためのオプションコーティング。<br class="hidden sm:inline" />
           ご使用になる前に施工することで最も効果を発揮します。
         </p>
       </div>
-      <div id="optionsTopGrid" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8"></div>
-      <div id="optionsBottomGrid" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+      <div id="optionsTopGrid" class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4"></div>
+      <div id="optionsBottomGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
     </div>
   </section>
 
   <!-- ==================== 6. 最終ページ：お問合せから施工までの流れ・7つのステップ（8ページ目構成） ==================== -->
-  <section id="flow-steps" class="py-16 sm:py-24 bg-slate-50 border-b border-slate-200">
+  <section id="flow-steps" class="py-8 sm:py-12 bg-slate-50 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="mb-10">
+      <div class="mb-5">
         <span class="font-en text-xs font-extrabold text-aline-teal tracking-widest uppercase">FLOW TO COMPLETION</span>
         <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-1">お問合せから施工までの流れ（7つのステップ）</h2>
       </div>
 
       <!-- STEP 01 〜 STEP 07 -->
-      <div id="stepsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-14"></div>
+      <div id="stepsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 mb-7"></div>
 
       <!-- お申込みから施工当日までにご確認いただきたいこと -->
-      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-xs mb-14">
-        <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 mb-6">お申込みから施工当日までにご確認いただきたいこと</h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="rounded-2xl bg-slate-50 p-5 border border-slate-200">
-            <span class="inline-block px-3 py-1 rounded bg-white border border-slate-300 text-xs font-extrabold text-slate-900 mb-3">新築</span>
-            <ul class="space-y-2 text-xs text-slate-700 leading-relaxed">
+      <div class="bg-white rounded-3xl p-5 sm:p-7 border border-slate-200 shadow-xs mb-7">
+        <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 mb-4">お申込みから施工当日までにご確認いただきたいこと</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="rounded-2xl bg-slate-50 p-4 border border-slate-200">
+            <span class="inline-block px-3 py-1 rounded bg-white border border-slate-300 text-xs font-extrabold text-slate-900 mb-2.5">新築</span>
+            <ul class="space-y-2 text-[13.5px] text-slate-700 leading-relaxed">
               <li>・水道と電気を使用させていただきますので、施工当日までに開通の手続きをお願いいたします。</li>
               <li>・駐車スペースを1台分お借りいたしますのでご了承ください。</li>
               <li>・仕上げのワックス塗布は不要ですので、ご新築の担当者様へお申し伝えください。</li>
               <li>・エアコン、電気工事などの室内工事は事前に済ませていただくようお願いいたします。</li>
             </ul>
           </div>
-          <div class="rounded-2xl bg-slate-50 p-5 border border-slate-200">
-            <span class="inline-block px-3 py-1 rounded bg-white border border-slate-300 text-xs font-extrabold text-slate-900 mb-3">中古・在宅時</span>
-            <ul class="space-y-2 text-xs text-slate-700 leading-relaxed">
+          <div class="rounded-2xl bg-slate-50 p-4 border border-slate-200">
+            <span class="inline-block px-3 py-1 rounded bg-white border border-slate-300 text-xs font-extrabold text-slate-900 mb-2.5">中古・在宅時</span>
+            <ul class="space-y-2 text-[13.5px] text-slate-700 leading-relaxed">
               <li>・施工場所から移動の必要な物の内容物などは事前にまとめるなどの準備をお願いいたします。</li>
               <li>※大型家具・家電などの移動は致しかねますのでご了承ください。</li>
               <li>・電化製品の配線の復旧はご協力をお願いいたします。（事前に配線の整理をお願いいたします。）</li>
             </ul>
           </div>
-          <div class="rounded-2xl bg-slate-50 p-5 border border-slate-200">
-            <span class="inline-block px-3 py-1 rounded bg-white border border-slate-300 text-xs font-extrabold text-slate-900 mb-3">集合住宅</span>
-            <ul class="space-y-2 text-xs text-slate-700 leading-relaxed">
+          <div class="rounded-2xl bg-slate-50 p-4 border border-slate-200">
+            <span class="inline-block px-3 py-1 rounded bg-white border border-slate-300 text-xs font-extrabold text-slate-900 mb-2.5">集合住宅</span>
+            <ul class="space-y-2 text-[13.5px] text-slate-700 leading-relaxed">
               <li>・管理組合様へ工事申請が必要な場合は、お客様にて手続きをお願いいたします。</li>
             </ul>
           </div>
@@ -476,16 +477,16 @@
 
       <!-- 施工の流れ（当日の8工程） -->
       <div>
-        <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 mb-6">施工の流れ（当日の8工程）</h3>
-        <div id="workStepsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+        <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 mb-4">施工の流れ（当日の8工程）</h3>
+        <div id="workStepsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5"></div>
       </div>
     </div>
   </section>
 
   <!-- ==================== 7. お問い合わせ窓口＆WEBフォーム ==================== -->
-  <section id="contact" class="py-16 sm:py-24 bg-white border-t-4 border-aline-teal">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-      <div class="lg:col-span-5 space-y-6">
+  <section id="contact" class="py-12 sm:py-16 bg-white border-t-4 border-aline-teal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-5 space-y-5">
         <div class="inline-block bg-aline-teal text-white text-sm font-extrabold px-4 py-1.5 rounded-lg">お問い合わせは</div>
         <div class="flex items-center gap-4">
           <span class="js-aline-logo w-16 h-14 inline-flex items-center justify-center shrink-0"></span>
@@ -501,60 +502,69 @@
           <span class="font-en text-2xl sm:text-3xl font-extrabold text-slate-900">080-4358-8815</span>
         </a>
 
-        <p class="text-sm text-slate-700 leading-relaxed font-medium">
+        <p class="text-[15.5px] text-slate-700 leading-relaxed font-medium">
           まずはお気軽にご相談ください！<strong>無料の訪問お見積り</strong>も可能です。<br />
           お住まい、ライフスタイル、ご予算などをうかがい、お客様に適したプランをご提案させていただきます。
         </p>
 
+        <!-- LINE公式（GoogleドライブQRコード・元の左右レイアウト維持） -->
         <div class="bg-[#F2FBF5] border border-[#06C755]/30 rounded-2xl p-5 flex items-center justify-between gap-4">
           <div>
             <span class="inline-block bg-[#06C755] text-white text-xs font-bold px-2.5 py-0.5 rounded mb-2">LINE公式</span>
-            <p class="text-sm font-extrabold text-slate-900">【友達追加】でLINEからも<br />お問合せいただけます！</p>
+            <p class="text-[15px] font-extrabold text-slate-900">【友達追加】でLINEからも<br />お問合せいただけます！</p>
             <button type="button" onclick="openModal('LINE友だち追加のご案内', '株式会社Aライン公式LINEアカウントをご利用いただけます。右側のQRコードをスマートフォンのカメラで読み取って友だち追加のうえ、お気軽にトーク画面よりご相談ください。')" class="mt-3 px-4 py-2 rounded-xl bg-[#06C755] text-white text-xs font-bold">
               LINEで相談する
             </button>
           </div>
-          <div class="w-24 h-24 bg-white p-2 rounded-xl border border-slate-200 shrink-0 flex items-center justify-center">
-            <img src="img/lineqr.png" alt="lineQRcode" class="w-full h-full object-cover" />
+          <div class="w-24 h-24 bg-white p-1.5 rounded-xl border border-slate-200 shrink-0 flex items-center justify-center overflow-hidden">
+            <img
+              src="https://drive.google.com/thumbnail?id=1LTWKNRdZWZjV4CtIrxl4XBLZZJCGRUjW&sz=w600"
+              alt="LINE QRコード"
+              class="w-full h-full object-contain rounded"
+              data-drive-id="1LTWKNRdZWZjV4CtIrxl4XBLZZJCGRUjW"
+              data-fallback-idx="0"
+              onerror="handleDriveFallback(this, 600)"
+            />
           </div>
         </div>
       </div>
 
-      <!-- WEB無料お見積り・ご相談フォーム -->
+      <!-- WEB無料お見積り・ご相談フォーム（Googleフォーム隠しiframe連携） -->
       <div class="lg:col-span-7 bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-xs">
         <h3 class="text-xl font-extrabold text-slate-900 mb-2">WEB無料お見積り・ご相談フォーム</h3>
-        <p class="text-xs text-slate-500 mb-6">下記項目をご入力のうえ送信してください。株式会社Aライン（担当／新井）より折り返しご連絡いたします。</p>
-        <form id="contactForm" class="space-y-4">
+        <p class="text-[13.5px] text-slate-500 mb-6">下記項目をご入力のうえ送信してください。株式会社Aライン（担当／新井）より折り返しご連絡いたします。</p>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+        <form id="contactForm" action="https://docs.google.com/forms/d/e/1FAIpQLSdz_W-mk6kXOsimFkxwkDLDiEh9yKHO5lwm6e-kSATNeOy42g/formResponse" method="POST" target="hidden_iframe" class="space-y-4">
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label class="block text-xs font-bold text-slate-700 mb-1.5">お名前 <span class="text-red-500">*</span></label>
-              <input type="text" id="userName" required placeholder="例：山田 太郎" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm" />
+              <input type="text" id="userName" name="entry.133460012" required placeholder="例：山田 太郎" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm" />
             </div>
             <div>
               <label class="block text-xs font-bold text-slate-700 mb-1.5">お電話番号 <span class="text-red-500">*</span></label>
-              <input type="tel" id="userPhone" required placeholder="例：090-1234-5678" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm" />
+              <input type="tel" id="userPhone" name="entry.283053904" required placeholder="例：090-1234-5678" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm" />
             </div>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label class="block text-xs font-bold text-slate-700 mb-1.5">メールアドレス</label>
-              <input type="email" id="userEmail" placeholder="example@email.com" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm" />
+              <input type="email" id="userEmail" name="entry.759160306" placeholder="example@email.com" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm" />
             </div>
             <div>
               <label class="block text-xs font-bold text-slate-700 mb-1.5">お住まいの種別</label>
-              <select class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm">
-                <option>新築戸建て</option>
-                <option>新築マンション（集合住宅）</option>
-                <option>中古・在宅中のお住まい</option>
-                <option>その他・未定</option>
+              <select id="userHousingType" name="entry.1177284473" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm">
+                <option value="新築戸建て">新築戸建て</option>
+                <option value="新築マンション（集合住宅）">新築マンション（集合住宅）</option>
+                <option value="中古・在宅中のお住まい">中古・在宅中のお住まい</option>
+                <option value="その他・未定">その他・未定</option>
               </select>
             </div>
           </div>
           <div>
             <label class="block text-xs font-bold text-slate-700 mb-1.5">ご相談内容・ご希望時期など</label>
-            <textarea rows="3" placeholder="広さ（畳数・㎡）やペットの有無、ご希望のコーティングなどお気軽にご記入ください。" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm"></textarea>
+            <textarea id="userMessage" name="entry.1635504473" rows="3" placeholder="広さ（畳数・㎡）やペットの有無、ご希望のコーティングなどお気軽にご記入ください。" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm"></textarea>
           </div>
-          <button type="submit" class="w-full py-4 rounded-xl bg-aline-teal hover:bg-aline-tealDark text-white font-extrabold text-base shadow-xs transition-all">
+          <button type="submit" id="submitBtn" class="w-full py-4 rounded-xl bg-aline-teal hover:bg-aline-tealDark text-white font-extrabold text-base shadow-xs transition-all disabled:opacity-60 disabled:cursor-not-allowed">
             無料お見積り・ご相談を送信する
           </button>
         </form>
@@ -587,6 +597,24 @@
   </div>
 
   <script>
+    // 0. Googleドライブ画像の共通フォールバック処理
+    window.handleDriveFallback = function(imgEl, size, finalFallbackUrl) {
+      const id = imgEl.getAttribute('data-drive-id');
+      if (!id) return;
+      const urls = [
+        `https://lh3.googleusercontent.com/d/${id}=w${size || 1000}`,
+        `https://drive.google.com/uc?export=view&id=${id}`
+      ];
+      let idx = parseInt(imgEl.getAttribute('data-fallback-idx') || '0', 10);
+      if (idx < urls.length) {
+        imgEl.setAttribute('data-fallback-idx', String(idx + 1));
+        imgEl.src = urls[idx];
+      } else {
+        imgEl.onerror = null;
+        if (finalFallbackUrl) imgEl.src = finalFallbackUrl;
+      }
+    };
+
     // 1. 株式会社Aライン ロゴSVG描画（ティールグリーン #00968f & ディープブルー #075394）
     const alineLogoSVG = `<svg viewBox="0 0 120 100" class="w-full h-full" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="株式会社Aライン ロゴ">
       <polygon points="44,4 76,4 38,96 6,96" fill="#00968f"/>
@@ -595,9 +623,19 @@
     </svg>`;
     document.querySelectorAll('.js-aline-logo').forEach(el => { el.innerHTML = alineLogoSVG; });
 
-    // 2. IPETCOAT画像（Ipetcoat-t.png）の配置＆未配置時プレビュー用フォールバック
-    // ※同じフォルダに「Ipetcoat-t.png」を置くとそのまま透過画像が表示されます
-    function handleIpetcoatFallback(imgEl, size) {
+    // 2. IPETCOATロゴ画像（Googleドライブ ID: 1gy8moSXL23NZgcOR4zzybvIZA3JXJD5t）＆フォールバック
+    const ipetcoatDriveId = '1gy8moSXL23NZgcOR4zzybvIZA3JXJD5t';
+    window.handleIpetcoatFallback = function(imgEl, size) {
+      const urls = [
+        `https://lh3.googleusercontent.com/d/${ipetcoatDriveId}=w1000`,
+        `https://drive.google.com/uc?export=view&id=${ipetcoatDriveId}`
+      ];
+      let idx = parseInt(imgEl.getAttribute('data-fallback-idx') || '0', 10);
+      if (idx < urls.length) {
+        imgEl.setAttribute('data-fallback-idx', String(idx + 1));
+        imgEl.src = urls[idx];
+        return;
+      }
       const box = imgEl.parentElement;
       if (!box) return;
       const textSizes = {
@@ -609,12 +647,12 @@
         <span class="${textSizes.sub} font-bold text-slate-800 tracking-widest pl-2">愛ペットコート</span>
         <span class="${textSizes.main} font-serif font-black text-aline-plum tracking-tight">IPETCOAT</span>
       </span>`;
-    }
+    };
 
     document.querySelectorAll('.js-ipetcoat-img').forEach(el => {
       const size = el.dataset.size || 'sm';
       const heightClass = size === 'lg' ? 'h-14 sm:h-20' : (size === 'xs' ? 'h-8' : 'h-10 sm:h-11');
-      el.innerHTML = `<img src="Ipetcoat-t.png" alt="愛ペットコート IPETCOAT" class="${heightClass} w-auto object-contain shrink-0" onerror="handleIpetcoatFallback(this, '${size}')" />`;
+      el.innerHTML = `<img src="https://drive.google.com/thumbnail?id=${ipetcoatDriveId}&sz=w1000" alt="愛ペットコート IPETCOAT" class="${heightClass} w-auto object-contain shrink-0" data-fallback-idx="0" onerror="handleIpetcoatFallback(this, '${size}')" />`;
     });
 
     // 3. 5段階レーダーチャート精密描画（頂点順：上=耐久性, 右上=耐傷, 右下=価格, 左下=防滑, 左上=光沢）
@@ -689,25 +727,25 @@
     const topOptions = [
       { badge: '汚れやすい場所のお手入れをラクに！', color: 'bg-aline-blue', text: 'text-aline-blue', title: '水まわりコーティング', desc: '汚れを落とす場所、手洗いなど水まわり設備は、放っておくとあっという間に汚れや水アカがこびりついてしまい、お掃除が大変になりがちな場所。コーティングをしておくことで、毎日のお手入れがラクになり、キレイな状態を維持しやすくなります！', place: 'キッチン・浴室・トイレ・洗面台', img: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80' },
       { badge: 'カビの発生・繁殖を抑制！', color: 'bg-aline-teal', text: 'text-aline-teal', title: '防カビコーティング', desc: '水まわり周辺や、収納内などは換気を心がけていても湿気がたまり、カビの発生率が高くなります。安全性の高い防カビコーティングでカビの発生・繁殖を抑制することで、見た目はもちろんカビによる健康被害の予防にも繋がります！', place: 'トイレ・キッチン・洗面台・収納', img: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80' },
-      { badge: '安全な防カビ剤配合で子供部屋も安心！', color: 'bg-emerald-600', text: 'text-emerald-700', title: 'クロスコーティング', desc: '壁紙は埃や調理の油煙などで、徐々に汚れが付いたり変色が進みます。クロスコーティングには帯電防止効果もあり、静電気による汚れの付着、埃をつきにくくしてキレイな状態を長続きさせます！無色のコーティング剤なので、壁紙の色に影響を与えません。', place: '壁紙（リビング・子供部屋など）', img: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80' }
+      { badge: '安全な防カビ剤配合で子供部屋も安心！', color: 'bg-emerald-600', text: 'text-emerald-700', title: 'クロスコーティング', desc: '壁紙は埃や調理の油煙などで、徐々に汚れが付いたり変色が進みます。クロスコーティングには帯電防止効果もあり、静電気による汚れの付着、埃をつきにくくしてキレイな状態を長続きさせます！無色のコーティング剤なので、壁紙の色に影響を与えません。', place: '壁紙（リビング・子供部屋など）', img: 'https://drive.google.com/thumbnail?id=1SsrSR0Yft3b14yU5GBl3Zfoeot9_kDyV&sz=w1000', driveId: '1SsrSR0Yft3b14yU5GBl3Zfoeot9_kDyV', fallbackImg: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80' }
     ];
     document.getElementById('optionsTopGrid').innerHTML = topOptions.map(o => `<div class="rounded-3xl border border-slate-200 bg-slate-50/70 overflow-hidden shadow-xs flex flex-col">
-      <div class="h-48 overflow-hidden relative"><img src="${o.img}" alt="${o.title}" class="w-full h-full object-cover"/><span class="absolute top-3 left-3 ${o.color} text-white text-xs font-bold px-3 py-1 rounded-full">${o.badge}</span></div>
-      <div class="p-6 flex-1 flex flex-col justify-between">
-        <div><h3 class="text-xl font-extrabold text-slate-900 mb-2">■ ${o.title}</h3><p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">${o.desc}</p></div>
+      <div class="h-48 overflow-hidden relative"><img src="${o.img}" alt="${o.title}" class="w-full h-full object-cover"${o.driveId ? ` data-drive-id="${o.driveId}" data-fallback-idx="0" onerror="handleDriveFallback(this, 1000, '${o.fallbackImg}')"` : ''}/><span class="absolute top-3 left-3 ${o.color} text-white text-xs font-bold px-3 py-1 rounded-full">${o.badge}</span></div>
+      <div class="p-5 flex-1 flex flex-col justify-between">
+        <div><h3 class="text-xl font-extrabold text-slate-900 mb-2">■ ${o.title}</h3><p class="text-[13.5px] sm:text-[15px] text-slate-600 leading-relaxed mb-4">${o.desc}</p></div>
         <div class="bg-white rounded-xl p-3 border border-slate-200 flex items-center justify-between"><span class="text-[11px] font-bold ${o.text}">おすすめ施工箇所</span><span class="text-xs font-bold text-slate-800">${o.place}</span></div>
       </div>
     </div>`).join('');
 
     const bottomOptions = [
-      { sub: '家の第一印象が決まる玄関の汚れをつきにくく！', title: '玄関石材コーティング', desc: '靴やお子様の遊具などについた土や細かなゴミだけでなく、靴底の油性汚れなどがタイルにしみついてしまうこともあります。防汚撥水性能により汚れや雨水などを浸透させにくくします！', place: '玄関（土間・たたき・石材箇所）', img: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=600&q=80' },
+      { sub: '家の第一印象が決まる玄関の汚れをつきにくく！', title: '玄関石材コーティング', desc: '靴やお子様の遊具などについた土や細かなゴミだけでなく、靴底の油性汚れなどがタイルにしみついてしまうこともあります。防汚撥水性能により汚れや雨水などを浸透させにくくします！', place: '玄関（土間・たたき・石材箇所）', img: 'https://drive.google.com/thumbnail?id=1z-MRc_UqzMEOZLvAamaZmQ40D70Nzvg_&sz=w1000', driveId: '1z-MRc_UqzMEOZLvAamaZmQ40D70Nzvg_', fallbackImg: 'https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=600&q=80' },
       { sub: '調湿プラス気になる臭いの脱臭効果！', title: 'エコカラット', desc: 'エコカラットの魅力は高級感のある質感・デザイン性だけでなく、優れた調湿と脱臭効果をあわせ持ち、水拭きも可能なところ。色、デザインが豊富なのでインテリアに合わせてアクセント使用も可能です。', place: 'リビング・ダイニング・寝室・トイレ・玄関', img: 'https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=600&q=80' },
-      { sub: '紫外線防止・断熱省エネ・防犯効果！', title: '窓ガラスフィルム', desc: 'フィルムを貼ることで透明感を損なわずに紫外線をカットし、日焼けによるカーテンや家具などの色あせを防ぎます。また、ガラスが割れても破片の飛散を防止するため防犯効果も得られます。', place: '窓（サッシ）', img: 'https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?auto=format&fit=crop&w=600&q=80' },
-      { sub: '単調になりがちな壁の一部を変えておしゃれな空間に！', title: 'アクセントクロス', desc: 'お部屋の壁面アクセントには大理石や珪藻土などを使う方法もありますが、費用も時間もかかりがち。壁紙なら手軽に、おしゃれな空間にできるのが魅力です！', place: 'リビング・ダイニング・寝室・トイレ', img: 'https://images.unsplash.com/photo-1615529328331-f8917597711f?auto=format&fit=crop&w=600&q=80' }
+      { sub: '紫外線防止・断熱省エネ・防犯効果！', title: '窓ガラスフィルム', desc: 'フィルムを貼ることで透明感を損なわずに紫外線をカットし、日焼けによるカーテンや家具などの色あせを防ぎます。また、ガラスが割れても破片の飛散を防止するため防犯効果も得られます。', place: '窓（サッシ）', img: 'https://drive.google.com/thumbnail?id=1a97wgUsTUYLxfMS8L7jwqK_WsL2YJ-p-&sz=w1000', driveId: '1a97wgUsTUYLxfMS8L7jwqK_WsL2YJ-p-', fallbackImg: 'https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?auto=format&fit=crop&w=600&q=80' },
+      { sub: '単調になりがちな壁の一部を変えておしゃれな空間に！', title: 'アクセントクロス', desc: 'お部屋の壁面アクセントには大理石や珪藻土などを使う方法もありますが、費用も時間もかかりがち。壁紙なら手軽に、おしゃれな空間にできるのが魅力です！', place: 'リビング・ダイニング・寝室・トイレ', img: 'https://drive.google.com/thumbnail?id=1UStSN7KkWqzgOm12pRjMwsCdU00_-DFX&sz=w1000', driveId: '1UStSN7KkWqzgOm12pRjMwsCdU00_-DFX', fallbackImg: 'https://images.unsplash.com/photo-1615529328331-f8917597711f?auto=format&fit=crop&w=600&q=80' }
     ];
-    document.getElementById('optionsBottomGrid').innerHTML = bottomOptions.map(o => `<div class="rounded-3xl border border-slate-200 bg-slate-50/70 p-5 sm:p-6 flex flex-col sm:flex-row gap-5 items-center">
-      <div class="w-full sm:w-44 h-44 rounded-2xl overflow-hidden shrink-0"><img src="${o.img}" alt="${o.title}" class="w-full h-full object-cover"/></div>
-      <div class="flex-1"><span class="text-xs font-bold text-slate-500">${o.sub}</span><h3 class="text-lg font-extrabold text-slate-900 mt-0.5 mb-2">■ ${o.title}</h3><p class="text-xs text-slate-600 leading-relaxed mb-3">${o.desc}</p><div class="text-[11px] bg-white px-3 py-1.5 rounded-lg border border-slate-200 font-bold text-slate-700">おすすめ施工箇所：${o.place}</div></div>
+    document.getElementById('optionsBottomGrid').innerHTML = bottomOptions.map(o => `<div class="rounded-3xl border border-slate-200 bg-slate-50/70 p-4 sm:p-5 flex flex-col sm:flex-row gap-4 items-center">
+      <div class="w-full sm:w-44 h-44 rounded-2xl overflow-hidden shrink-0"><img src="${o.img}" alt="${o.title}" class="w-full h-full object-cover"${o.driveId ? ` data-drive-id="${o.driveId}" data-fallback-idx="0" onerror="handleDriveFallback(this, 1000, '${o.fallbackImg}')"` : ''}/></div>
+      <div class="flex-1"><span class="text-xs font-bold text-slate-500">${o.sub}</span><h3 class="text-lg font-extrabold text-slate-900 mt-0.5 mb-2">■ ${o.title}</h3><p class="text-[13.5px] text-slate-600 leading-relaxed mb-3">${o.desc}</p><div class="text-[11px] bg-white px-3 py-1.5 rounded-lg border border-slate-200 font-bold text-slate-700">おすすめ施工箇所：${o.place}</div></div>
     </div>`).join('');
 
     // 7. 7つのステップ（STEP 01 〜 STEP 07）アイコン付き描画
@@ -730,15 +768,15 @@
       { no: '06', title: 'お引渡し', desc: '施工完了時間の目途がつき次第、ご連絡いたしますので、施工箇所をご確認いただき、取り扱い方法などをご案内してお引渡しとなります。' },
       { no: '07', title: '保証書の発行', desc: '後日、保証書を発行しお届けいたします。万が一保証期間中に塗膜の剥がれや施工不良が生じた場合も、責任を持って無償で補修対応いたしますので長く安心してお住まいいただけます。', wide: true }
     ];
-    document.getElementById('stepsGrid').innerHTML = steps.map((s, idx) => `<div class="bg-white rounded-2xl p-6 ${s.wide ? 'border-2 border-aline-teal/40 sm:col-span-2' : 'border border-slate-200'} shadow-xs">
-      <div class="flex items-center justify-between gap-2 mb-3">
+    document.getElementById('stepsGrid').innerHTML = steps.map((s, idx) => `<div class="bg-white rounded-2xl p-5 ${s.wide ? 'border-2 border-aline-teal/40 sm:col-span-2' : 'border border-slate-200'} shadow-xs">
+      <div class="flex items-center justify-between gap-2 mb-2.5">
         <div class="flex items-center gap-3">
           <span class="w-11 h-11 rounded-full bg-aline-teal text-white flex flex-col items-center justify-center leading-none shrink-0"><span class="text-[8px] font-en font-bold">STEP</span><span class="text-sm font-en font-extrabold">${s.no}</span></span>
           <h3 class="text-lg font-extrabold text-slate-900">${s.title}</h3>
         </div>
         <span class="w-9 h-9 rounded-xl bg-slate-100 flex items-center justify-center shrink-0">${stepIcons[idx]}</span>
       </div>
-      <p class="text-xs text-slate-600 leading-relaxed">${s.desc}</p>
+      <p class="text-[13.5px] text-slate-600 leading-relaxed">${s.desc}</p>
     </div>`).join('');
 
     // 8. 施工の流れ（当日の8工程）
@@ -754,7 +792,7 @@
     ];
     document.getElementById('workStepsGrid').innerHTML = workSteps.map(w => `<div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-xs">
       <div class="flex items-center gap-2 mb-2"><span class="w-6 h-6 rounded-full bg-aline-teal text-white text-xs font-bold flex items-center justify-center">${w.no}</span><h4 class="font-bold text-sm text-slate-900">${w.title}</h4></div>
-      <p class="text-xs text-slate-600 leading-relaxed">${w.desc}</p>
+      <p class="text-[13.5px] text-slate-600 leading-relaxed">${w.desc}</p>
     </div>`).join('');
 
     // 9. スマホハンバーガーメニュー＆モーダル開閉処理
@@ -782,11 +820,30 @@
       const m = document.getElementById('modalBox');
       m.classList.add('hidden'); m.classList.remove('flex');
     }
-    document.getElementById('contactForm').addEventListener('submit', e => {
-      e.preventDefault();
+
+    // 10. Googleフォーム 隠しiframe送信処理
+    let isFormSubmitted = false;
+    const contactForm = document.getElementById('contactForm');
+    const hiddenIframe = document.getElementById('hidden_iframe');
+    const submitBtn = document.getElementById('submitBtn');
+
+    contactForm.addEventListener('submit', () => {
+      isFormSubmitted = true;
+      submitBtn.disabled = true;
+      submitBtn.textContent = '送信中...';
+    });
+
+    hiddenIframe.addEventListener('load', () => {
+      if (!isFormSubmitted) return;
+      isFormSubmitted = false;
       const name = document.getElementById('userName').value.trim();
-      openModal('お問い合わせを受け付けました', `${name ? name + ' 様、' : ''}お問い合わせ誠にありがとうございます。株式会社Aライン（担当／新井）より折り返しご連絡いたします。`);
-      e.target.reset();
+      openModal(
+        'お問い合わせを受け付けました',
+        `${name ? name + ' 様、' : ''}お問い合わせ誠にありがとうございます。株式会社Aライン（担当／新井）より折り返しご連絡いたします。`
+      );
+      contactForm.reset();
+      submitBtn.disabled = false;
+      submitBtn.textContent = '無料お見積り・ご相談を送信する';
     });
   </script>
 </body>
