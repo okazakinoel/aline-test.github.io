@@ -49,59 +49,6 @@
   <style>
     body { background-color: #FFFFFF; color: #1F2937; font-feature-settings: "palt"; }
     .glass-header { background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(10px); }
-    /* スマホ表示時の本文サイズおよび詳細説明文・補足・注釈を確実に拡大し、行間を広げる（フッターは除く） */
-    @media (max-width: 767px) {
-      html { font-size: 17.5px; }
-      section p, article p, section li, section dd, section dt,
-      section div[class*="text-xs"], section div[class*="text-[11px]"],
-      section span[class*="text-xs"], section span[class*="text-sm"],
-      article span[class*="text-xs"], article span[class*="text-sm"] {
-        font-size: 16px !important;
-        line-height: 1.9 !important;
-      }
-      section p[class*="text-[15.5px]"],
-      article p[class*="text-[15.5px]"] {
-        font-size: 17.5px !important;
-      }
-      /* キャッチコピー・バッジ・注釈のバランス維持 */
-      #top h1 + p {
-        font-size: 17px !important;
-        line-height: 1.55 !important;
-      }
-      article p[class*="text-[10px]"],
-      section span[class*="text-[10.5px]"] {
-        font-size: 13px !important;
-        line-height: 1.6 !important;
-      }
-      /* 耐久年数・保証年数バッジや小さいピルラベルはレイアウト崩れを防ぐ */
-      article span[class*="rounded-xl"],
-      article span[class*="rounded-full"],
-      section span[class*="rounded-full"] {
-        font-size: 12.5px !important;
-        line-height: 1.4 !important;
-      }
-      /* トップ画像内の「快適な住まいを実現する 株式会社Aライン」バッジは元のサイズを維持 */
-      #top .bg-white\/95 span.text-aline-teal {
-        font-size: 11px !important;
-        line-height: 1.25 !important;
-      }
-      #top .bg-white\/95 span.text-slate-900 {
-        font-size: 16px !important;
-        line-height: 1.25 !important;
-      }
-      /* フッターは元のサイズを維持 */
-      footer {
-        font-size: 12px !important;
-        line-height: 1.5 !important;
-      }
-      footer nav a, footer div {
-        font-size: 12px !important;
-        line-height: 1.5 !important;
-      }
-      footer span.text-sm {
-        font-size: 14px !important;
-      }
-    }
   </style>
   <script>
     // 0. Googleドライブ画像の共通フォールバック処理（imgのonerrorより先に定義するためhead内に配置）

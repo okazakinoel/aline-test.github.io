@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>施工事例（埼玉・関東のフロアコーティング実績） | 株式会社Aライン</title>
+  <meta name="description" content="埼玉を中心にフロアコーティングを施工する株式会社Aラインの施工事例ページ（現在作成中）。Aラインコート（マットガラス・ツヤUV）、愛ペットコート、オプション施工の実績を順次公開予定です。" />
+  <meta name="keywords" content="フロアコーティング,施工事例,埼玉,久喜,さいたま市,UVコーティング,ガラスコーティング,愛ペットコート,株式会社Aライン" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="施工事例 | 株式会社Aライン" />
+  <meta property="og:description" content="埼玉県を中心とした戸建て・マンションのフロアコーティング施工事例ページです（現在作成中・順次公開予定）。" />
+  <meta property="og:site_name" content="株式会社Aライン" />
+  <meta property="og:image" content="https://lh3.googleusercontent.com/d/1dD-RmIHgf8Rcs6WV_5mlbkKyAyFBrLld=w1200" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- ファビコン（株式会社Aライン ロゴ） -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 100'%3E%3Cpolygon points='44,4 76,4 38,96 6,96' fill='%2300968f'/%3E%3Cpolygon points='44,4 76,4 114,96 82,96' fill='%2300968f'/%3E%3Cpolygon points='44,4 76,4 60,42' fill='%23075394'/%3E%3C/svg%3E" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Inter"', '"Noto Sans JP"', 'sans-serif'],
+            en: ['"Inter"', 'sans-serif'],
+          },
+          colors: {
+            aline: {
+              teal: '#00968f',
+              tealDark: '#00756f',
+              tealLight: '#E6F5F4',
+              blue: '#075394',
+              blueLight: '#EBF4FA',
+              plum: '#86198f',
+              plumLight: '#F9EBF8',
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body { background-color: #FFFFFF; color: #1F2937; font-feature-settings: "palt"; }
+    .glass-header { background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(10px); }
+  </style>
+  <script>
+    // Googleドライブ画像の共通フォールバック処理
+    window.handleDriveFallback = function(imgEl, size, finalFallbackUrl) {
+      try {
+        const id = imgEl.getAttribute('data-drive-id');
+        if (!id) return;
+        const urls = [
+          `https://lh3.googleusercontent.com/d/${id}=w${size || 1000}`,
+          `https://drive.google.com/uc?export=view&id=${id}`
+        ];
+        let idx = parseInt(imgEl.getAttribute('data-fallback-idx') || '0', 10);
+        if (idx < urls.length) {
+          imgEl.setAttribute('data-fallback-idx', String(idx + 1));
+          imgEl.src = urls[idx];
+        } else {
+          imgEl.onerror = null;
+          if (finalFallbackUrl) imgEl.src = finalFallbackUrl;
+        }
+      } catch (e) {
+        if (finalFallbackUrl) imgEl.src = finalFallbackUrl;
+      }
+    };
+  </script>
+</head>
+<body class="antialiased selection:bg-aline-teal selection:text-white">
+
+  <!-- ==================== 1. 共通固定ヘッダー ==================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-header border-b border-slate-200/80 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2">
+      <!-- 株式会社Aライン ロゴ＆社名 -->
+      <a href="index.html" class="flex items-center gap-2 shrink-0">
+        <span class="js-aline-logo w-9 h-8 sm:w-10 sm:h-9 inline-flex items-center justify-center"></span>
+        <div class="flex items-baseline gap-2">
+          <span class="text-base sm:text-xl font-extrabold tracking-tight text-slate-900">株式会社<span class="font-en">A</span>ライン</span>
+        </div>
+      </a>
+
+      <!-- PC表示ナビゲーション（共通6項目） -->
+      <nav class="hidden md:flex items-center gap-3.5 lg:gap-5 text-xs lg:text-sm font-bold text-slate-700 whitespace-nowrap">
+        <a href="index.html" class="hover:text-aline-teal transition-colors">フロアコーティング</a>
+        <a href="index.html#options" class="hover:text-aline-teal transition-colors">オプション</a>
+        <a href="flow.html" class="hover:text-aline-teal transition-colors">施工の流れ</a>
+        <a href="works.html" aria-current="page" class="text-aline-teal border-b-2 border-aline-teal pb-0.5 transition-colors">施工事例</a>
+        <a href="faq.html" class="hover:text-aline-teal transition-colors">FAQ (質問)</a>
+        <a href="index.html#company" class="hover:text-aline-teal transition-colors">会社概要</a>
+      </nav>
+
+      <!-- PC見積りボタン＆スマホハンバーガーボタン -->
+      <div class="flex items-center gap-2 shrink-0">
+        <a href="tel:08043588815" class="hidden xl:flex items-center gap-1.5 font-en text-lg font-extrabold text-aline-teal hover:text-aline-tealDark">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+          <span>080-4358-8815</span>
+        </a>
+        <a href="index.html#contact" class="hidden md:inline-flex px-3.5 lg:px-4 py-2.5 rounded-xl bg-aline-teal hover:bg-aline-tealDark text-white text-xs lg:text-sm font-bold shadow-xs transition-all whitespace-nowrap">
+          無料お見積り
+        </a>
+        <!-- スマホ表示ハンバーガーボタン -->
+        <button id="menuBtn" type="button" aria-expanded="false" aria-label="メニューを開く" class="md:hidden p-2.5 rounded-xl text-slate-800 hover:bg-slate-100">
+          <svg id="iconHamburger" class="w-6 h-6 stroke-current" fill="none" stroke-width="2.3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="iconClose" class="w-6 h-6 stroke-current hidden" fill="none" stroke-width="2.3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- スマホドロワーメニュー（共通6項目） -->
+    <div id="mobileMenu" class="md:hidden hidden bg-white border-t border-slate-200 shadow-xl px-4 py-5 space-y-2">
+      <a href="index.html" class="mobile-link flex justify-between items-center px-4 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-aline-tealLight hover:text-aline-teal"><span>フロアコーティング</span><span>→</span></a>
+      <a href="index.html#options" class="mobile-link flex justify-between items-center px-4 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-aline-tealLight hover:text-aline-teal"><span>オプション</span><span>→</span></a>
+      <a href="flow.html" class="mobile-link flex justify-between items-center px-4 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-aline-tealLight hover:text-aline-teal"><span>施工の流れ</span><span>→</span></a>
+      <a href="works.html" class="mobile-link flex justify-between items-center px-4 py-3 rounded-xl text-sm font-bold bg-aline-tealLight text-aline-teal"><span>施工事例</span><span>→</span></a>
+      <a href="faq.html" class="mobile-link flex justify-between items-center px-4 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-aline-tealLight hover:text-aline-teal"><span>FAQ (質問)</span><span>→</span></a>
+      <a href="index.html#company" class="mobile-link flex justify-between items-center px-4 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-aline-tealLight hover:text-aline-teal"><span>会社概要</span><span>→</span></a>
+      <div class="pt-3 border-t border-slate-100 grid gap-2">
+        <a href="tel:08043588815" class="mobile-link flex items-center justify-center gap-2 py-3 rounded-xl bg-slate-100 text-slate-900 font-en font-extrabold text-sm">080-4358-8815</a>
+        <a href="index.html#contact" class="mobile-link flex items-center justify-center py-3.5 rounded-xl bg-aline-teal text-white font-bold text-sm">無料お見積り・ご相談</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== 2. ページヘッダー＆目立つ「現在作成中」バナー ==================== -->
+  <section class="pt-24 pb-10 sm:pt-28 sm:pb-12 bg-gradient-to-b from-[#F2FAF9] to-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav aria-label="パンくずリスト" class="text-xs font-bold text-slate-500 mb-4 flex items-center gap-2">
+        <a href="index.html" class="hover:text-aline-teal transition-colors">フロアコーティング（トップ）</a>
+        <span>/</span>
+        <span class="text-slate-800">施工事例</span>
+      </nav>
+
+      <div class="flex flex-wrap items-center gap-3 mb-2">
+        <span class="inline-block font-en text-xs font-extrabold text-aline-teal bg-aline-tealLight px-3 py-1 rounded-full tracking-wider">
+          WORKS &amp; GALLERY
+        </span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500 text-white text-xs font-extrabold shadow-xs">
+          <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+          ただいま作成中
+        </span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+        施工事例
+      </h1>
+      <p class="text-[15px] sm:text-base text-slate-600 leading-relaxed mt-2.5 max-w-3xl">
+        埼玉県久喜市を拠点に、さいたま市・越谷市・川口市・春日部市・川越市など関東各地で施工いたしましたフロアコーティングの実績をご紹介するページです。
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== 3. 施工事例ギャラリー（公開予定レイアウトイメージ） ==================== -->
+  <section class="py-10 sm:py-14 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- カテゴリーフィルター -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-7">
+        <div>
+          <span class="font-en text-xs font-extrabold text-aline-teal tracking-widest uppercase">GALLERY PREVIEW</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-0.5">
+            施工事例イメージ一覧
+          </h2>
+        </div>
+
+        <div id="filterBtns" class="flex flex-wrap gap-2" role="group" aria-label="施工カテゴリー絞り込み">
+          <button type="button" data-filter="all" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-aline-teal text-white shadow-xs transition-all">すべて</button>
+          <button type="button" data-filter="aline" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-slate-700 border border-slate-200 hover:border-aline-teal hover:text-aline-teal transition-all">Aラインコート</button>
+          <button type="button" data-filter="pet" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-slate-700 border border-slate-200 hover:border-aline-plum hover:text-aline-plum transition-all">愛ペットコート</button>
+          <button type="button" data-filter="silicon" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-slate-700 border border-slate-200 hover:border-aline-blue hover:text-aline-blue transition-all">シリコンコート</button>
+        </div>
+      </div>
+
+      <!-- 施工事例カードグリッド -->
+      <div id="worksGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+      <!-- 補足注記 -->
+      <div class="mt-8 bg-white rounded-2xl border border-slate-200 p-4 sm:p-5 text-xs sm:text-sm text-slate-600 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <p>※上記はページ完成時の掲載イメージです。実際の施工事例写真・お客様のお声は準備が整い次第、順次差し替え・追加いたします。</p>
+        <span class="font-en font-bold text-amber-700 shrink-0">Coming Soon...</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4. お問い合わせ・お見積りCTA ==================== -->
+  <section class="py-12 sm:py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-br from-[#F2FAF9] via-white to-[#EBF4FA] rounded-3xl p-6 sm:p-10 border border-teal-200/80 shadow-xs text-center">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-aline-teal text-white text-xs font-extrabold mb-3">
+          無料訪問お見積り・サンプル確認
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">
+          実際のツヤ感・質感はサンプルでもご確認いただけます
+        </h2>
+        <p class="text-sm sm:text-[15.5px] text-slate-600 leading-relaxed max-w-2xl mx-auto mb-7">
+          「マットガラスとツヤUVで迷っている」「愛犬の滑り止め効果を相談したい」など、お住まいの床材に合わせたご提案をいたします。お気軽にご相談ください。
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5">
+          <a href="index.html#contact" class="w-full sm:w-auto px-7 py-4 rounded-2xl bg-aline-teal hover:bg-aline-tealDark text-white font-extrabold text-sm sm:text-base shadow-xs transition-all">
+            WEBから無料お見積り・相談
+          </a>
+          <a href="tel:08043588815" class="w-full sm:w-auto px-6 py-4 rounded-2xl bg-white hover:bg-slate-50 border border-slate-300 text-slate-900 font-en font-extrabold text-base transition-all inline-flex items-center justify-center gap-2">
+            <svg class="w-4 h-4 fill-aline-teal" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+            080-4358-8815
+          </a>
+          <a href="https://line.me/R/ti/p/@582nzjim" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-4 rounded-2xl bg-[#06C755] hover:bg-[#05b34c] text-white font-extrabold text-sm sm:text-base transition-all">
+            LINEで相談する
+          </a>
+        </div>
+
+        <div class="mt-8 pt-6 border-t border-slate-200/80 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs sm:text-sm font-bold text-slate-600">
+          <a href="index.html" class="hover:text-aline-teal transition-colors">← フロアコーティング一覧へ</a>
+          <a href="flow.html" class="hover:text-aline-teal transition-colors">施工の流れを見る →</a>
+          <a href="faq.html" class="hover:text-aline-teal transition-colors">FAQ (質問) を見る →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. 共通フッター ==================== -->
+  <footer class="bg-slate-900 text-slate-400 py-10 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 pb-6 border-b border-slate-800">
+        <a href="index.html" class="flex items-center gap-3">
+          <span class="js-aline-logo w-8 h-7 bg-white rounded-md p-1 inline-flex items-center justify-center"></span>
+          <span class="text-white font-bold text-sm">株式会社<span class="font-en">A</span>ライン</span>
+          <span class="hidden sm:inline">| 快適な住まいを実現する</span>
+        </a>
+        <nav class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs font-bold text-slate-300">
+          <a href="index.html" class="hover:text-aline-teal transition-colors">フロアコーティング</a>
+          <a href="index.html#options" class="hover:text-aline-teal transition-colors">オプション</a>
+          <a href="flow.html" class="hover:text-aline-teal transition-colors">施工の流れ</a>
+          <a href="works.html" class="text-white hover:text-aline-teal transition-colors">施工事例</a>
+          <a href="faq.html" class="hover:text-aline-teal transition-colors">FAQ (質問)</a>
+          <a href="index.html#company" class="hover:text-aline-teal transition-colors">会社概要</a>
+        </nav>
+      </div>
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-2 text-slate-500">
+        <div>〒340-0211 埼玉県久喜市上内1367-33 / TEL: 080-4358-8815</div>
+        <div>&copy; A-Line Co., Ltd. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 1. 株式会社Aライン ロゴSVG描画
+    const alineLogoSVG = `<svg viewBox="0 0 120 100" class="w-full h-full" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="株式会社Aライン ロゴ">
+      <polygon points="44,4 76,4 38,96 6,96" fill="#00968f"/>
+      <polygon points="44,4 76,4 114,96 82,96" fill="#00968f"/>
+      <polygon points="44,4 76,4 60,42" fill="#075394"/>
+    </svg>`;
+    document.querySelectorAll('.js-aline-logo').forEach(el => { el.innerHTML = alineLogoSVG; });
+
+    // 2. 施工事例サンプルデータ（ご共有いただいたGoogleドライブ個別写真6枚を反映）
+    const worksData = [
+      {
+        category: 'aline',
+        catLabel: 'Aラインコート',
+        catColor: 'bg-aline-teal text-white',
+        area: '埼玉県さいたま市',
+        housing: '新築戸建て（LDK・廊下・洋室）',
+        menu: 'Aラインコート / マットガラス',
+        summary: '木目の風合いを活かした自然な低光沢仕上げ。お子様のおもちゃによる引きずり傷対策と、日々の拭き掃除のしやすさを重視してご選定いただきました。',
+        img: 'https://drive.google.com/thumbnail?id=1pLNLxY4NFjsNtxcxxh8traFTbaLE1lTh&sz=w1000',
+        driveId: '1pLNLxY4NFjsNtxcxxh8traFTbaLE1lTh',
+        fallbackImg: 'https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=900&q=80'
+      },
+      {
+        category: 'aline',
+        catLabel: 'Aラインコート',
+        catColor: 'bg-aline-teal text-white',
+        area: '埼玉県久喜市',
+        housing: '新築戸建て（1階・2階全面）',
+        menu: 'Aラインコート / ツヤ UV',
+        summary: '窓からの光を美しく反射する高光沢仕上げで、リビング全体がぱっと明るい印象に。紫外線照射による即時硬化で、当日の搬入にもスムーズに対応しました。',
+        img: 'https://drive.google.com/thumbnail?id=1zIQ0JF1V4u1CeoPMKq4xZ_WNzuhT6DxZ&sz=w1000',
+        driveId: '1zIQ0JF1V4u1CeoPMKq4xZ_WNzuhT6DxZ',
+        fallbackImg: 'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=900&q=80'
+      },
+      {
+        category: 'pet',
+        catLabel: '愛ペットコート',
+        catColor: 'bg-aline-plum text-white',
+        area: '埼玉県越谷市',
+        housing: '新築マンション（LDK・廊下）',
+        menu: '愛ペットコート IPETCOAT / U',
+        summary: '小型犬2頭との暮らしに向けて、高い防滑性と撥水性を兼ね備えたペット用UVコーティングを施工。粗相のお手入れもサッと拭くだけで完了します。',
+        img: 'https://drive.google.com/thumbnail?id=1hMllMb1JZ7G5_NLmDad2MTxVwza1Kkte&sz=w1000',
+        driveId: '1hMllMb1JZ7G5_NLmDad2MTxVwza1Kkte',
+        fallbackImg: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=80'
+      },
+      {
+        category: 'pet',
+        catLabel: '愛ペットコート',
+        catColor: 'bg-aline-plum text-white',
+        area: '埼玉県春日部市',
+        housing: '在宅戸建て（LDK）',
+        menu: '愛ペットコート IPETCOAT / S',
+        summary: 'ご入居後の在宅施工にて、愛犬の足腰への負担軽減を目的にシリコンコーティングを実施。コストを抑えつつ、しっかりグリップの効く床に仕上がりました。',
+        img: 'https://drive.google.com/thumbnail?id=13gsLiIfdzb-sUDa0YhmswL70GmyFzDkX&sz=w1000',
+        driveId: '13gsLiIfdzb-sUDa0YhmswL70GmyFzDkX',
+        fallbackImg: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80'
+      },
+      {
+        category: 'silicon',
+        catLabel: 'シリコンコート',
+        catColor: 'bg-aline-blue text-white',
+        area: '埼玉県川口市',
+        housing: '新築マンション（LDK・洋室）',
+        menu: 'シリコンコート（15年耐久・5年保証）',
+        summary: 'ご予算とのバランスを重視されるお客様に人気のシリコンコーティングを施工。適度なツヤ感と撥水性・防滑性を備え、日々のお手入れをラクにします。',
+        img: 'https://drive.google.com/thumbnail?id=19xSsKxlZ6Vn1HOJD7cn39N3a0X5PJ-C0&sz=w1000',
+        driveId: '19xSsKxlZ6Vn1HOJD7cn39N3a0X5PJ-C0',
+        fallbackImg: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80'
+      },
+      {
+        category: 'aline',
+        catLabel: 'Aラインコート',
+        catColor: 'bg-aline-teal text-white',
+        area: '埼玉県川越市',
+        housing: '新築戸建て（1階フロア）',
+        menu: 'Aラインコート / マットガラス',
+        summary: '落ち着いた木目調フローリングの質感を損なわず、傷や水汚れからしっかり床を保護。ご家族が長く安心して暮らせる床面へ仕上げました。',
+        img: 'https://drive.google.com/thumbnail?id=17Sjc4iL6sVZ5m5GeojmZ1j23Dc3DJ2Cx&sz=w1000',
+        driveId: '17Sjc4iL6sVZ5m5GeojmZ1j23Dc3DJ2Cx',
+        fallbackImg: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=900&q=80'
+      }
+    ];
+
+    const worksGrid = document.getElementById('worksGrid');
+    function renderWorks(filter) {
+      const list = filter === 'all' ? worksData : worksData.filter(w => w.category === filter);
+      worksGrid.innerHTML = list.map(w => `
+        <article class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="relative h-52 bg-slate-100 overflow-hidden">
+              <img
+                src="${w.img}"
+                alt="${w.area} ${w.menu} 施工イメージ"
+                class="w-full h-full object-cover"
+                ${w.driveId ? `data-drive-id="${w.driveId}" data-fallback-idx="0" onerror="handleDriveFallback(this, 1000, '${w.fallbackImg}')"` : ''}
+              />
+              <!-- カテゴリーラベル（左上） -->
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-extrabold shadow-xs ${w.catColor}">
+                ${w.catLabel}
+              </span>
+              <!-- エリア表示（左下） -->
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/75 via-slate-950/30 to-transparent px-4 py-2.5 text-white">
+                <span class="text-xs font-bold">${w.area} ／ ${w.housing}</span>
+              </div>
+            </div>
+
+            <div class="p-5">
+              <h3 class="text-lg font-extrabold text-slate-900 mb-2">${w.menu}</h3>
+              <p class="text-[13.5px] text-slate-600 leading-relaxed">${w.summary}</p>
+            </div>
+          </div>
+
+          <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-end text-xs">
+            <a href="index.html#contact" class="font-extrabold text-aline-teal hover:underline">このプランを相談する →</a>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    // 初回描画
+    renderWorks('all');
+
+    // フィルターボタン切り替え処理
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.getAttribute('data-filter');
+        renderWorks(target);
+        filterBtns.forEach(b => {
+          const active = b === btn;
+          b.className = active
+            ? 'filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-aline-teal text-white shadow-xs transition-all'
+            : 'filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-slate-700 border border-slate-200 hover:border-aline-teal hover:text-aline-teal transition-all';
+        });
+      });
+    });
+
+    // 3. スマホハンバーガーメニュー開閉処理
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const iconHam = document.getElementById('iconHamburger');
+    const iconClose = document.getElementById('iconClose');
+
+    function toggleMenu(open) {
+      mobileMenu.classList.toggle('hidden', !open);
+      iconHam.classList.toggle('hidden', open);
+      iconClose.classList.toggle('hidden', !open);
+      menuBtn.setAttribute('aria-expanded', String(open));
+    }
+    menuBtn.addEventListener('click', () => toggleMenu(mobileMenu.classList.contains('hidden')));
+    document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', () => toggleMenu(false)));
+  </script>
+</body>
+</html>

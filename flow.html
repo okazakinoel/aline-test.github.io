@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>施工の流れ（7ステップ・事前確認・当日8工程） | 株式会社Aライン</title>
+  <meta name="description" content="埼玉を中心にフロアコーティングを施工する株式会社Aラインの「施工の流れ」ページ。お問い合わせから保証書発行までの7ステップ、新築・在宅・集合住宅の事前確認事項、施工当日の8工程をご案内します。" />
+  <meta name="keywords" content="フロアコーティング,施工の流れ,事前確認,当日工程,埼玉,株式会社Aライン" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="施工の流れ | 株式会社Aライン" />
+  <meta property="og:description" content="お問い合わせから施工・お引渡し・保証書発行までの流れと、施工当日の8工程・事前確認事項をわかりやすくご案内します。" />
+  <meta property="og:site_name" content="株式会社Aライン" />
+  <meta property="og:image" content="https://lh3.googleusercontent.com/d/1dD-RmIHgf8Rcs6WV_5mlbkKyAyFBrLld=w1200" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- ファビコン（株式会社Aライン ロゴ） -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 100'%3E%3Cpolygon points='44,4 76,4 38,96 6,96' fill='%2300968f'/%3E%3Cpolygon points='44,4 76,4 114,96 82,96' fill='%2300968f'/%3E%3Cpolygon points='44,4 76,4 60,42' fill='%23075394'/%3E%3C/svg%3E" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Inter"', '"Noto Sans JP"', 'sans-serif'],
+            en: ['"Inter"', 'sans-serif'],
+          },
+          colors: {
+            aline: {
+              teal: '#00968f',
+              tealDark: '#00756f',
+              tealLight: '#E6F5F4',
+              blue: '#075394',
+              blueLight: '#EBF4FA',
+              plum: '#86198f',
+              plumLight: '#F9EBF8',
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body { background-color: #FFFFFF; color: #1F2937; font-feature-settings: "palt"; }
+    .glass-header { background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(10px); }
+  </style>
+  <script>
+    // Googleドライブ画像の共通フォールバック処理
+    window.handleDriveFallback = function(imgEl, size, finalFallbackUrl) {
+      try {
+        const id = imgEl.getAttribute('data-drive-id');
+        if (!id) return;
+        const urls = [
+          `https://lh3.googleusercontent.com/d/${id}=w${size || 1000}`,
+          `https://drive.google.com/uc?export=view&id=${id}`
+        ];
+        let idx = parseInt(imgEl.getAttribute('data-fallback-idx') || '0', 10);
+        if (idx < urls.length) {
+          imgEl.setAttribute('data-fallback-idx', String(idx + 1));
+          imgEl.src = urls[idx];
+        } else {
+          imgEl.onerror = null;
+          if (finalFallbackUrl) imgEl.src = finalFallbackUrl;
+        }
+      } catch (e) {
+        if (finalFallbackUrl) imgEl.src = finalFallbackUrl;
+      }
+    };
+  </script>
+</head>
+<body class="antialiased selection:bg-aline-teal selection:text-white">
+
+  <!-- ==================== 1. 共通固定ヘッダー ==================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-header border-b border-slate-200/80 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2">
+      <!-- 株式会社Aライン ロゴ＆社名 -->
+      <a href="index.html" class="flex items-center gap-2 shrink-0">
+        <span class="js-aline-logo w-9 h-8 sm:w-10 sm:h-9 inline-flex items-center justify-center"></span>
+        <div class="flex items-baseline gap-2">
+          <span class="text-base sm:text-xl font-extrabold tracking-tight text-slate-900">株式会社<span class="font-en">A</span>ライン</span>
+        </div>
+      </a>
+
+      <!-- PC表示ナビゲーション（共通6項目） -->
+      <nav class="hidden md:flex items-center gap-3.5 lg:gap-5 text-xs lg:text-sm font-bold text-slate-700 whitespace-nowrap">
+        <a href="index.html" class="hover:text-aline-teal transition-colors">フロアコーティング</a>
+        <a href="index.html#options" class="hover:text-aline-teal transition-colors">オプション</a>
+        <a href="flow.html" aria-current="page" class="text-aline-teal border-b-2 border-aline-teal pb-0.5 transition-colors">施工の流れ</a>
+        <a href="works.html" class="hover:text-aline-teal transition-colors">施工事例</a>
+        <a href="faq.html" class="hover:text-aline-teal transition-colors">FAQ (質問)</a>
+        <a href="index.html#company" class="hover:text-aline-teal transition-colors">会社概要</a>
+      </nav>
+
+      <!-- PC見積りボタン＆スマホハンバーガーボタン -->
+      <div class="flex items-center gap-2 shrink-0">
+        <a href="tel:08043588815" class="hidden xl:flex items-center gap-1.5 font-en text-lg font-extrabold text-aline-teal hover:text-aline-tealDark">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+          <span>080-4358-8815</span>
+        </a>
+        <a href="index.html#contact" class="hidden md:inline-flex px-3.5 lg:px-4 py-2.5 rounded-xl bg-aline-teal hover:bg-aline-tealDark text-white text-xs lg:text-sm font-bold shadow-xs transition-all whitespace-nowrap">
+          無料お見積り
+        </a>
+        <!-- スマホ表示ハンバーガーボタン -->
+        <button id="menuBtn" type="button" aria-expanded="false" aria-label="メニューを開く" class="md:hidden p-2.5 rounded-xl text-slate-800 hover:bg-slate-100">
+          <svg id="iconHamburger" class="w-6 h-6 stroke-current" fill="none" stroke-width="2.3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="iconClose" class="w-6 h-6 stroke-current hidden" fill="none" stroke-width="2.3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- スマホドロワーメニュー（共通6項目） -->
+    <div id="mobileMenu" class="md:hidden hidden bg-white border-t border-slate-200 shadow-xl px-4 py-5 space-y-2">
+      <a href="index.html" class="mobile-link flex justify-between items-center px-4 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-aline-tealLight hover:text-aline-teal"><span>フロアコーティング</span><span>→</span></a>
+      <a href="index.html#options" class="mobile-link flex justify-between items-center px-4 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-aline-tealLight hover:text-aline-teal"><span>オプション</span><span>→</span></a>
+      <a href="flow.html" class="mobile-link flex justify-between items-center px-4 py-3 rounded-xl text-sm font-bold bg-aline-tealLight text-aline-teal"><span>施工の流れ</span><span>→</span></a>
+      <a href="works.html" class="mobile-link flex justify-between items-center px-4 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-aline-tealLight hover:text-aline-teal"><span>施工事例</span><span>→</span></a>
+      <a href="faq.html" class="mobile-link flex justify-between items-center px-4 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-aline-tealLight hover:text-aline-teal"><span>FAQ (質問)</span><span>→</span></a>
+      <a href="index.html#company" class="mobile-link flex justify-between items-center px-4 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-aline-tealLight hover:text-aline-teal"><span>会社概要</span><span>→</span></a>
+      <div class="pt-3 border-t border-slate-100 grid gap-2">
+        <a href="tel:08043588815" class="mobile-link flex items-center justify-center gap-2 py-3 rounded-xl bg-slate-100 text-slate-900 font-en font-extrabold text-sm">080-4358-8815</a>
+        <a href="index.html#contact" class="mobile-link flex items-center justify-center py-3.5 rounded-xl bg-aline-teal text-white font-bold text-sm">無料お見積り・ご相談</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== 2. ページヘッダー（パンくず＆タイトル＆メイン写真） ==================== -->
+  <section class="pt-24 pb-10 sm:pt-28 sm:pb-12 bg-gradient-to-b from-[#F2FAF9] to-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav aria-label="パンくずリスト" class="text-xs font-bold text-slate-500 mb-4 flex items-center gap-2">
+        <a href="index.html" class="hover:text-aline-teal transition-colors">フロアコーティング（トップ）</a>
+        <span>/</span>
+        <span class="text-slate-800">施工の流れ</span>
+      </nav>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
+        <!-- 左：タイトル・説明文・ショートカット -->
+        <div class="lg:col-span-7">
+          <span class="inline-block text-xs font-extrabold text-aline-teal bg-aline-tealLight px-3 py-1 rounded-full mb-2.5">
+            FLOW TO COMPLETION
+          </span>
+          <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+            お問合せから施工までの流れ
+          </h1>
+          <p class="text-[15px] sm:text-base text-slate-600 leading-relaxed mt-3">
+            初めてフロアコーティングをご依頼される方にも安心してお任せいただけるよう、お問い合わせから施工完了・保証書の発行までの手順と、当日の作業工程をご案内いたします。
+          </p>
+
+          <!-- ページ内ショートカット -->
+          <div class="mt-5 flex flex-wrap gap-2 text-xs font-bold">
+            <a href="#seven-steps" class="px-3.5 py-2 rounded-xl bg-white border border-slate-200 hover:border-aline-teal hover:text-aline-teal transition-colors">7つのステップ ↓</a>
+            <a href="#before-check" class="px-3.5 py-2 rounded-xl bg-white border border-slate-200 hover:border-aline-teal hover:text-aline-teal transition-colors">事前確認事項 ↓</a>
+            <a href="#day-steps" class="px-3.5 py-2 rounded-xl bg-white border border-slate-200 hover:border-aline-teal hover:text-aline-teal transition-colors">当日の8工程 ↓</a>
+          </div>
+        </div>
+
+        <!-- 右：お問合せから施工までの流れ メイン写真 -->
+        <div class="lg:col-span-5">
+          <div class="relative h-56 sm:h-64 lg:h-72 rounded-3xl overflow-hidden border border-teal-100 shadow-sm bg-slate-100">
+            <img
+              src="https://drive.google.com/thumbnail?id=1ZRDSSGa249aVMXswsNyInzAck1kdSDlr&sz=w1200"
+              alt="お問合せから施工までの流れ メイン写真"
+              class="w-full h-full object-cover"
+              data-drive-id="1ZRDSSGa249aVMXswsNyInzAck1kdSDlr"
+              data-fallback-idx="0"
+              onerror="handleDriveFallback(this, 1200, 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85')"
+            />
+            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/65 via-slate-950/20 to-transparent px-4 py-3 text-white">
+              <p class="text-xs sm:text-sm font-bold">お問い合わせから保証書発行まで丁寧にご案内いたします</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 3. 7つのステップ（STEP 01 〜 STEP 07） ==================== -->
+  <section id="seven-steps" class="py-10 sm:py-14 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-6">
+        <span class="font-en text-xs font-extrabold text-aline-teal tracking-widest uppercase">STEP 01 - 07</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">お問合せから施工・保証書発行までの7つのステップ</h2>
+      </div>
+
+      <div id="stepsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+    </div>
+  </section>
+
+  <!-- ==================== 4. お申込みから施工当日までにご確認いただきたいこと ==================== -->
+  <section id="before-check" class="py-10 sm:py-14 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-6">
+        <span class="font-en text-xs font-extrabold text-aline-teal tracking-widest uppercase">CHECKLIST</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">お申込みから施工当日までにご確認いただきたいこと</h2>
+        <p class="text-sm sm:text-[15px] text-slate-600 mt-2">
+          スムーズかつ高品質な施工を行うため、お住まいの状況に合わせて事前に以下の点をご確認いただいております。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="rounded-3xl bg-slate-50 p-6 border border-slate-200 shadow-2xs">
+          <div class="flex items-center gap-2.5 mb-3.5">
+            <span class="inline-block px-3.5 py-1 rounded-lg bg-aline-teal text-white text-xs font-extrabold">新築</span>
+            <span class="text-xs font-bold text-slate-500">お引渡し前・ご入居前</span>
+          </div>
+          <ul class="space-y-2.5 text-[14px] text-slate-700 leading-relaxed">
+            <li class="flex items-start gap-2"><span class="text-aline-teal font-bold">・</span><span>水道と電気を使用させていただきますので、施工当日までに開通の手続きをお願いいたします。</span></li>
+            <li class="flex items-start gap-2"><span class="text-aline-teal font-bold">・</span><span>駐車スペースを1台分お借りいたしますのでご了承ください。</span></li>
+            <li class="flex items-start gap-2"><span class="text-aline-teal font-bold">・</span><span>仕上げのワックス塗布は不要ですので、ご新築の担当者様へお申し伝えください。</span></li>
+            <li class="flex items-start gap-2"><span class="text-aline-teal font-bold">・</span><span>エアコン、電気工事などの室内工事は事前に済ませていただくようお願いいたします。</span></li>
+          </ul>
+        </div>
+
+        <div class="rounded-3xl bg-slate-50 p-6 border border-slate-200 shadow-2xs">
+          <div class="flex items-center gap-2.5 mb-3.5">
+            <span class="inline-block px-3.5 py-1 rounded-lg bg-aline-blue text-white text-xs font-extrabold">中古・在宅時</span>
+            <span class="text-xs font-bold text-slate-500">すでにお住まいの方</span>
+          </div>
+          <ul class="space-y-2.5 text-[14px] text-slate-700 leading-relaxed">
+            <li class="flex items-start gap-2"><span class="text-aline-blue font-bold">・</span><span>施工場所から移動の必要な物の内容物などは事前にまとめるなどの準備をお願いいたします。</span></li>
+            <li class="flex items-start gap-2"><span class="text-slate-500 font-bold">※</span><span class="text-slate-600">大型家具・家電などの移動は致しかねますのでご了承ください。</span></li>
+            <li class="flex items-start gap-2"><span class="text-aline-blue font-bold">・</span><span>電化製品の配線の復旧はご協力をお願いいたします。（事前に配線の整理をお願いいたします。）</span></li>
+          </ul>
+        </div>
+
+        <div class="rounded-3xl bg-slate-50 p-6 border border-slate-200 shadow-2xs">
+          <div class="flex items-center gap-2.5 mb-3.5">
+            <span class="inline-block px-3.5 py-1 rounded-lg bg-slate-800 text-white text-xs font-extrabold">集合住宅</span>
+            <span class="text-xs font-bold text-slate-500">マンション等</span>
+          </div>
+          <ul class="space-y-2.5 text-[14px] text-slate-700 leading-relaxed">
+            <li class="flex items-start gap-2"><span class="text-slate-800 font-bold">・</span><span>管理組合様へ工事申請が必要な場合は、お客様にて手続きをお願いいたします。</span></li>
+          </ul>
+          <div class="mt-5 pt-4 border-t border-slate-200 text-xs text-slate-500 leading-relaxed">
+            申請書類の作成にあたり、施工内容や使用液剤の資料が必要な場合はお気軽に株式会社Aラインまでお申し付けください。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. 施工の流れ（当日の8工程） ==================== -->
+  <section id="day-steps" class="py-10 sm:py-14 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-6">
+        <span class="font-en text-xs font-extrabold text-aline-teal tracking-widest uppercase">WORK PROCESS</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">施工の流れ（当日の8工程）</h2>
+        <p class="text-sm sm:text-[15px] text-slate-600 mt-2">
+          清掃から養生、簡易補修、コーティング施工、最終確認まで、自社責任施工で一件一件丁寧に仕上げます。
+        </p>
+      </div>
+
+      <div id="workStepsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+    </div>
+  </section>
+
+  <!-- ==================== 6. お問い合わせ・お見積りCTA ==================== -->
+  <section class="py-12 sm:py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-br from-[#F2FAF9] via-white to-[#EBF4FA] rounded-3xl p-6 sm:p-10 border border-teal-200/80 shadow-xs text-center">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-aline-teal text-white text-xs font-extrabold mb-3">
+          無料訪問お見積り・日程相談
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">
+          まずはお気軽にご相談ください！
+        </h2>
+        <p class="text-sm sm:text-[15.5px] text-slate-600 leading-relaxed max-w-2xl mx-auto mb-7">
+          「引き渡しから引っ越しまでの短い期間で施工できる？」「在宅中でも大丈夫？」など、スケジュールや準備についてのご不安も丁寧にお答えいたします。
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5">
+          <a href="index.html#contact" class="w-full sm:w-auto px-7 py-4 rounded-2xl bg-aline-teal hover:bg-aline-tealDark text-white font-extrabold text-sm sm:text-base shadow-xs transition-all">
+            WEBから無料お見積り・相談
+          </a>
+          <a href="tel:08043588815" class="w-full sm:w-auto px-6 py-4 rounded-2xl bg-white hover:bg-slate-50 border border-slate-300 text-slate-900 font-en font-extrabold text-base transition-all inline-flex items-center justify-center gap-2">
+            <svg class="w-4 h-4 fill-aline-teal" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+            080-4358-8815
+          </a>
+          <a href="https://line.me/R/ti/p/@582nzjim" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-4 rounded-2xl bg-[#06C755] hover:bg-[#05b34c] text-white font-extrabold text-sm sm:text-base transition-all">
+            LINEで相談する
+          </a>
+        </div>
+
+        <div class="mt-8 pt-6 border-t border-slate-200/80 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs sm:text-sm font-bold text-slate-600">
+          <a href="index.html" class="hover:text-aline-teal transition-colors">← フロアコーティング一覧へ</a>
+          <a href="works.html" class="hover:text-aline-teal transition-colors">施工事例を見る →</a>
+          <a href="faq.html" class="hover:text-aline-teal transition-colors">FAQ (質問) を見る →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 7. 共通フッター ==================== -->
+  <footer class="bg-slate-900 text-slate-400 py-10 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 pb-6 border-b border-slate-800">
+        <a href="index.html" class="flex items-center gap-3">
+          <span class="js-aline-logo w-8 h-7 bg-white rounded-md p-1 inline-flex items-center justify-center"></span>
+          <span class="text-white font-bold text-sm">株式会社<span class="font-en">A</span>ライン</span>
+          <span class="hidden sm:inline">| 快適な住まいを実現する</span>
+        </a>
+        <nav class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs font-bold text-slate-300">
+          <a href="index.html" class="hover:text-aline-teal transition-colors">フロアコーティング</a>
+          <a href="index.html#options" class="hover:text-aline-teal transition-colors">オプション</a>
+          <a href="flow.html" class="text-white hover:text-aline-teal transition-colors">施工の流れ</a>
+          <a href="works.html" class="hover:text-aline-teal transition-colors">施工事例</a>
+          <a href="faq.html" class="hover:text-aline-teal transition-colors">FAQ (質問)</a>
+          <a href="index.html#company" class="hover:text-aline-teal transition-colors">会社概要</a>
+        </nav>
+      </div>
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-2 text-slate-500">
+        <div>〒340-0211 埼玉県久喜市上内1367-33 / TEL: 080-4358-8815</div>
+        <div>&copy; A-Line Co., Ltd. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 1. 株式会社Aライン ロゴSVG描画
+    const alineLogoSVG = `<svg viewBox="0 0 120 100" class="w-full h-full" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="株式会社Aライン ロゴ">
+      <polygon points="44,4 76,4 38,96 6,96" fill="#00968f"/>
+      <polygon points="44,4 76,4 114,96 82,96" fill="#00968f"/>
+      <polygon points="44,4 76,4 60,42" fill="#075394"/>
+    </svg>`;
+    document.querySelectorAll('.js-aline-logo').forEach(el => { el.innerHTML = alineLogoSVG; });
+
+    // 2. 7つのステップ（STEP 01 〜 STEP 07）オリジナルSVGイラスト＆描画
+    const stepIllustrations = {
+      // STEP 01: お問い合わせ（オペレーター＆電話・LINE・メール相談）
+      '01': `<svg viewBox="0 0 240 130" class="w-full h-full max-w-[240px]" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="お問い合わせイラスト">
+        <circle cx="120" cy="68" r="46" fill="#E6F5F4"/>
+        <!-- 吹き出し -->
+        <rect x="148" y="20" width="54" height="30" rx="10" fill="#FFFFFF" stroke="#00968f" stroke-width="2.2"/>
+        <path d="M158 50 L152 59 L167 50 Z" fill="#FFFFFF" stroke="#00968f" stroke-width="2.2" stroke-linejoin="round"/>
+        <circle cx="164" cy="35" r="2.5" fill="#00968f"/>
+        <circle cx="175" cy="35" r="2.5" fill="#00968f"/>
+        <circle cx="186" cy="35" r="2.5" fill="#00968f"/>
+        <!-- オペレーター人物 -->
+        <path d="M84 114 C84 92 100 84 120 84 C140 84 156 92 156 114 Z" fill="#00968f"/>
+        <path d="M111 84 L120 97 L129 84 Z" fill="#FFFFFF"/>
+        <circle cx="120" cy="58" r="19" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.4"/>
+        <!-- ヘッドセット -->
+        <path d="M98 58 A22 22 0 0 1 142 58" fill="none" stroke="#075394" stroke-width="3.2" stroke-linecap="round"/>
+        <rect x="94" y="52" width="7" height="14" rx="3.5" fill="#075394"/>
+        <rect x="139" y="52" width="7" height="14" rx="3.5" fill="#075394"/>
+        <path d="M142 66 C142 73 133 74 126 73" fill="none" stroke="#075394" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="124" cy="73" r="2.5" fill="#075394"/>
+        <!-- 笑顔 -->
+        <circle cx="114" cy="56" r="1.8" fill="#1E293B"/>
+        <circle cx="126" cy="56" r="1.8" fill="#1E293B"/>
+        <path d="M115 63 Q120 67 125 63" fill="none" stroke="#1E293B" stroke-width="2" stroke-linecap="round"/>
+        <!-- スマホアイコン -->
+        <rect x="44" y="42" width="26" height="44" rx="5" fill="#FFFFFF" stroke="#075394" stroke-width="2.2"/>
+        <line x1="52" y1="79" x2="62" y2="79" stroke="#075394" stroke-width="2" stroke-linecap="round"/>
+        <rect x="49" y="50" width="16" height="22" rx="2" fill="#EBF4FA"/>
+      </svg>`,
+
+      // STEP 02: お打ち合わせ（対面でのヒアリング・ご提案）
+      '02': `<svg viewBox="0 0 240 130" class="w-full h-full max-w-[240px]" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="お打ち合わせイラスト">
+        <circle cx="120" cy="68" r="46" fill="#E6F5F4"/>
+        <!-- 吹き出し（中央上部） -->
+        <rect x="92" y="16" width="56" height="28" rx="9" fill="#FFFFFF" stroke="#00968f" stroke-width="2.2"/>
+        <line x1="103" y1="26" x2="137" y2="26" stroke="#00968f" stroke-width="2.4" stroke-linecap="round"/>
+        <line x1="103" y1="34" x2="127" y2="34" stroke="#94A3B8" stroke-width="2.4" stroke-linecap="round"/>
+        <!-- 左の人物（お客様） -->
+        <circle cx="76" cy="56" r="13" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.4"/>
+        <path d="M54 96 C54 78 64 72 76 72 C88 72 98 78 98 96 Z" fill="#075394"/>
+        <!-- 右の人物（担当者） -->
+        <circle cx="164" cy="56" r="13" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.4"/>
+        <path d="M142 96 C142 78 152 72 164 72 C176 72 186 78 186 96 Z" fill="#00968f"/>
+        <!-- テーブル＆資料 -->
+        <rect x="46" y="94" width="148" height="10" rx="5" fill="#1E293B"/>
+        <rect x="103" y="84" width="34" height="10" rx="2" fill="#FFFFFF" stroke="#00968f" stroke-width="2"/>
+        <rect x="66" y="104" width="7" height="14" rx="2" fill="#64748B"/>
+        <rect x="167" y="104" width="7" height="14" rx="2" fill="#64748B"/>
+      </svg>`,
+
+      // STEP 03: お見積り（明瞭な見積書＆電卓）
+      '03': `<svg viewBox="0 0 240 130" class="w-full h-full max-w-[240px]" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="お見積りイラスト">
+        <circle cx="120" cy="68" r="46" fill="#E6F5F4"/>
+        <!-- 見積書 -->
+        <rect x="74" y="20" width="68" height="88" rx="7" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.4"/>
+        <rect x="84" y="30" width="48" height="10" rx="3" fill="#00968f"/>
+        <line x1="85" y1="52" x2="131" y2="52" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="85" y1="63" x2="131" y2="63" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="85" y1="74" x2="118" y2="74" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="85" y1="88" x2="131" y2="88" stroke="#075394" stroke-width="3.2" stroke-linecap="round"/>
+        <!-- 電卓 -->
+        <rect x="132" y="54" width="44" height="58" rx="6" fill="#075394" stroke="#1E293B" stroke-width="2.2"/>
+        <rect x="139" y="61" width="30" height="12" rx="2" fill="#E6F5F4"/>
+        <circle cx="143" cy="82" r="2.8" fill="#FFFFFF"/>
+        <circle cx="154" cy="82" r="2.8" fill="#FFFFFF"/>
+        <circle cx="165" cy="82" r="2.8" fill="#FFFFFF"/>
+        <circle cx="143" cy="92" r="2.8" fill="#FFFFFF"/>
+        <circle cx="154" cy="92" r="2.8" fill="#FFFFFF"/>
+        <circle cx="165" cy="92" r="2.8" fill="#FFFFFF"/>
+        <circle cx="143" cy="102" r="2.8" fill="#FFFFFF"/>
+        <rect x="151" y="99" width="17" height="6" rx="2.5" fill="#5EEAD4"/>
+      </svg>`,
+
+      // STEP 04: お申込み（スマホ・契約手続き・日程決定カレンダー）
+      '04': `<svg viewBox="0 0 240 130" class="w-full h-full max-w-[240px]" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="お申込みイラスト">
+        <circle cx="120" cy="68" r="46" fill="#E6F5F4"/>
+        <!-- カレンダー（施工日決定） -->
+        <rect x="116" y="28" width="66" height="64" rx="8" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.3"/>
+        <path d="M116 36 C116 31.5 119.5 28 124 28 L174 28 C178.5 28 182 31.5 182 36 L182 46 L116 46 Z" fill="#00968f"/>
+        <line x1="133" y1="22" x2="133" y2="33" stroke="#1E293B" stroke-width="3" stroke-linecap="round"/>
+        <line x1="165" y1="22" x2="165" y2="33" stroke="#1E293B" stroke-width="3" stroke-linecap="round"/>
+        <!-- カレンダー日付＆チェック -->
+        <rect x="126" y="55" width="10" height="8" rx="2" fill="#E2E8F0"/>
+        <rect x="144" y="55" width="10" height="8" rx="2" fill="#E2E8F0"/>
+        <rect x="162" y="55" width="10" height="8" rx="2" fill="#E2E8F0"/>
+        <rect x="126" y="71" width="10" height="8" rx="2" fill="#E2E8F0"/>
+        <circle cx="149" cy="75" r="8" fill="#075394"/>
+        <path d="M145.5 75 L148 77.5 L153 72.5" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- スマホ -->
+        <rect x="64" y="34" width="44" height="76" rx="8" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.4"/>
+        <rect x="70" y="44" width="32" height="52" rx="3" fill="#EBF4FA"/>
+        <circle cx="86" cy="103" r="2.5" fill="#94A3B8"/>
+        <path d="M78 70 L84 76 L95 64" fill="none" stroke="#00968f" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>`,
+
+      // STEP 05: 施工（フロアコーティング塗布＆輝くフローリング）
+      '05': `<svg viewBox="0 0 240 130" class="w-full h-full max-w-[240px]" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="施工イラスト">
+        <circle cx="120" cy="68" r="46" fill="#E6F5F4"/>
+        <!-- フローリング床 -->
+        <polygon points="38,112 72,88 202,88 182,112" fill="#D1EFEA" stroke="#00968f" stroke-width="2"/>
+        <line x1="60" y1="100" x2="192" y2="100" stroke="#00968f" stroke-width="1.2" opacity="0.5"/>
+        <!-- 施工スタッフ（モップ／コーター作業） -->
+        <circle cx="136" cy="34" r="11" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.4"/>
+        <path d="M124 48 L148 48 L153 78 L120 78 Z" fill="#00968f" stroke="#1E293B" stroke-width="2.2" stroke-linejoin="round"/>
+        <!-- 脚 -->
+        <line x1="128" y1="78" x2="122" y2="100" stroke="#075394" stroke-width="5.5" stroke-linecap="round"/>
+        <line x1="145" y1="78" x2="152" y2="100" stroke="#075394" stroke-width="5.5" stroke-linecap="round"/>
+        <!-- 腕とコーターの柄 -->
+        <line x1="125" y1="56" x2="106" y2="66" stroke="#1E293B" stroke-width="3.2" stroke-linecap="round"/>
+        <line x1="112" y1="56" x2="86" y2="101" stroke="#1E293B" stroke-width="3" stroke-linecap="round"/>
+        <rect x="70" y="98" width="32" height="7" rx="3" fill="#075394"/>
+        <!-- キラキラ（ツヤ表現） -->
+        <path d="M62 66 L65 73 L72 76 L65 79 L62 86 L59 79 L52 76 L59 73 Z" fill="#00968f"/>
+        <path d="M178 60 L180 65 L185 67 L180 69 L178 74 L176 69 L171 67 L176 65 Z" fill="#075394"/>
+      </svg>`,
+
+      // STEP 06: お引渡し（仕上がり確認＆鍵のお渡し）
+      '06': `<svg viewBox="0 0 240 130" class="w-full h-full max-w-[240px]" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="お引渡しイラスト">
+        <circle cx="120" cy="68" r="46" fill="#E6F5F4"/>
+        <!-- 家のシルエット -->
+        <path d="M84 62 L120 34 L156 62 L156 106 L84 106 Z" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.4" stroke-linejoin="round"/>
+        <path d="M76 64 L120 28 L164 64" fill="none" stroke="#00968f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- 鍵のアイコン（中央） -->
+        <circle cx="110" cy="76" r="10" fill="#EBF4FA" stroke="#075394" stroke-width="3"/>
+        <line x1="120" y1="76" x2="142" y2="76" stroke="#075394" stroke-width="3" stroke-linecap="round"/>
+        <line x1="133" y1="76" x2="133" y2="83" stroke="#075394" stroke-width="3" stroke-linecap="round"/>
+        <line x1="140" y1="76" x2="140" y2="82" stroke="#075394" stroke-width="3" stroke-linecap="round"/>
+        <!-- キラキラ -->
+        <path d="M174 36 L176.5 42 L182.5 44.5 L176.5 47 L174 53 L171.5 47 L165.5 44.5 L171.5 42 Z" fill="#00968f"/>
+        <path d="M64 46 L66 50.5 L70.5 52.5 L66 54.5 L64 59 L62 54.5 L57.5 52.5 L62 50.5 Z" fill="#075394"/>
+      </svg>`,
+
+      // STEP 07: 保証書の発行（長期保証書＆安心の盾マーク）
+      '07': `<svg viewBox="0 0 240 130" class="w-full h-full max-w-[240px]" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="保証書の発行イラスト">
+        <circle cx="120" cy="68" r="46" fill="#E6F5F4"/>
+        <!-- 保証書（横型賞状・証明書スタイル） -->
+        <rect x="52" y="26" width="122" height="80" rx="8" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.4"/>
+        <rect x="60" y="34" width="106" height="64" rx="4" fill="none" stroke="#00968f" stroke-width="1.6" stroke-dasharray="4 3"/>
+        <rect x="74" y="44" width="54" height="9" rx="3" fill="#00968f"/>
+        <line x1="74" y1="63" x2="132" y2="63" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="74" y1="73" x2="122" y2="73" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="74" y1="83" x2="112" y2="83" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+        <!-- 認定リボン＆盾バッジ -->
+        <path d="M164 46 L186 54 L186 72 C186 84 176 93 164 98 C152 93 142 84 142 72 L142 54 Z" fill="#075394" stroke="#FFFFFF" stroke-width="2.5" stroke-linejoin="round"/>
+        <path d="M155 71 L162 78 L175 64" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>`
+    };
+
+    const steps = [
+      { no: '01', title: 'お問い合わせ', desc: 'フロアコーティングがどんなものなのか、自宅にはどれが良いのか分からない……など、まずはお気軽に、電話・ライン・メールなどでご相談ください。' },
+      { no: '02', title: 'お打ち合わせ', desc: 'お客様のご希望、施工場所のお住まいに関する情報などをお聞きして、適したプランのご提案と、すり合わせをいたします。場合により現地調査を実施いたします。' },
+      { no: '03', title: 'お見積り', desc: 'お打ち合わせの内容を元に、明瞭な見積書を作成いたします。無料訪問お見積りも可能ですのでお気軽にご依頼ください。' },
+      { no: '04', title: 'お申込み', desc: '見積書をご確認、お申込みいただきましたら、施工日を決定し契約書および請求書をお送りいたします。施工前日までにお振込みいただきます。' },
+      { no: '05', title: '施工', desc: '当日朝にお立会いいただき、施工箇所の確認が完了しましたら、外出していただいて構いません。（作業完了まで入室いただけない場合がございます。）' },
+      { no: '06', title: 'お引渡し', desc: '施工完了時間の目途がつき次第、ご連絡いたしますので、施工箇所をご確認いただき、取り扱い方法などをご案内してお引渡しとなります。' },
+      { no: '07', title: '保証書の発行', desc: '後日、保証書を発行しお届けいたします。万が一保証期間中に塗膜の剥がれや施工不良が生じた場合も、責任を持って無償で補修対応いたしますので長く安心してお住まいいただけます。', wide: true }
+    ];
+
+    document.getElementById('stepsGrid').innerHTML = steps.map(s => `<div class="bg-white rounded-3xl overflow-hidden ${s.wide ? 'border-2 border-aline-teal/40 sm:col-span-2' : 'border border-slate-200'} shadow-xs flex flex-col">
+      <div class="relative h-40 bg-gradient-to-b from-[#F5FBFA] to-white border-b border-slate-100 flex items-center justify-center p-3">
+        ${stepIllustrations[s.no]}
+        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-aline-teal text-white font-en text-[11px] font-extrabold tracking-wide shadow-xs">STEP ${s.no}</span>
+      </div>
+      <div class="p-5 flex-1 flex flex-col">
+        <h3 class="text-lg font-extrabold text-slate-900 mb-2">${s.title}</h3>
+        <p class="text-[13.5px] text-slate-600 leading-relaxed">${s.desc}</p>
+      </div>
+    </div>`).join('');
+
+    // 3. 施工の流れ（当日の8工程）シンプルな線画ワンポイントイラスト＆描画
+    const workStepIcons = {
+      // 1. お立合い（お客様とスタッフでの対面確認）
+      '1': `<svg viewBox="0 0 120 80" class="w-28 h-20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="38" cy="24" r="9" stroke="#1E293B" stroke-width="2.2"/>
+        <path d="M22 58 C22 44 29 38 38 38 C47 38 54 44 54 58" stroke="#1E293B" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="82" cy="24" r="9" stroke="#00968f" stroke-width="2.2"/>
+        <path d="M66 58 C66 44 73 38 82 38 C91 38 98 44 98 58" stroke="#00968f" stroke-width="2.2" stroke-linecap="round"/>
+        <rect x="49" y="14" width="22" height="15" rx="4" stroke="#00968f" stroke-width="2"/>
+        <path d="M55 21.5 L58.5 25 L65 18.5" stroke="#00968f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="16" y1="64" x2="104" y2="64" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round"/>
+      </svg>`,
+
+      // 2. 清掃（ワイパーとピカピカの床）
+      '2': `<svg viewBox="0 0 120 80" class="w-28 h-20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <line x1="76" y1="12" x2="54" y2="54" stroke="#1E293B" stroke-width="2.4" stroke-linecap="round"/>
+        <rect x="34" y="54" width="40" height="9" rx="3" stroke="#00968f" stroke-width="2.2"/>
+        <line x1="20" y1="67" x2="100" y2="67" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round"/>
+        <path d="M30 22 L32 27 L37 29 L32 31 L30 36 L28 31 L23 29 L28 27 Z" stroke="#00968f" stroke-width="1.8" stroke-linejoin="round"/>
+        <path d="M88 34 L89.5 38 L93.5 39.5 L89.5 41 L88 45 L86.5 41 L82.5 39.5 L86.5 38 Z" stroke="#1E293B" stroke-width="1.6" stroke-linejoin="round"/>
+      </svg>`,
+
+      // 3. 養生（マスキングテープのロールと保護ライン）
+      '3': `<svg viewBox="0 0 120 80" class="w-28 h-20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="44" cy="40" r="18" stroke="#1E293B" stroke-width="2.2"/>
+        <circle cx="44" cy="40" r="7" stroke="#00968f" stroke-width="2.2"/>
+        <path d="M44 58 L94 58 L94 48 L60 48" stroke="#00968f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="68" y1="53" x2="86" y2="53" stroke="#00968f" stroke-width="1.8" stroke-dasharray="3 3" stroke-linecap="round"/>
+        <line x1="18" y1="66" x2="102" y2="66" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round"/>
+      </svg>`,
+
+      // 4. 簡易補修（リペアペンで床のキズを補修）
+      '4': `<svg viewBox="0 0 120 80" class="w-28 h-20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M74 16 L84 26 L52 58 L40 60 L42 48 Z" stroke="#1E293B" stroke-width="2.2" stroke-linejoin="round"/>
+        <line x1="66" y1="24" x2="76" y2="34" stroke="#00968f" stroke-width="2.2"/>
+        <path d="M24 62 Q32 58 40 60" stroke="#00968f" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="3 3"/>
+        <path d="M88 42 L90 46 L94 48 L90 50 L88 54 L86 50 L82 48 L86 46 Z" stroke="#00968f" stroke-width="1.8" stroke-linejoin="round"/>
+        <line x1="18" y1="67" x2="102" y2="67" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round"/>
+      </svg>`,
+
+      // 5. 施工（平らなフローリングワイパーでのコーティング塗布とツヤ）
+      '5': `<svg viewBox="0 0 120 80" class="w-28 h-20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- 柄（ポール） -->
+        <line x1="80" y1="12" x2="62" y2="49" stroke="#1E293B" stroke-width="2.4" stroke-linecap="round"/>
+        <!-- ジョイント部 -->
+        <rect x="57" y="45" width="10" height="6" rx="2" stroke="#1E293B" stroke-width="2" fill="#FFFFFF"/>
+        <!-- 平らなフローリングワイパーヘッド（上面プレート） -->
+        <path d="M36 51 L78 45 L92 54 L50 60 Z" stroke="#1E293B" stroke-width="2.2" stroke-linejoin="round" fill="#FFFFFF"/>
+        <!-- 下部の平らな塗布パッド（モップシート） -->
+        <path d="M36 51 L36 55 L50 64 L92 58 L92 54" stroke="#00968f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- 塗り広げたツヤの表現＆キラキラ -->
+        <line x1="20" y1="66" x2="102" y2="66" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round"/>
+        <path d="M22 57 L32 55 M26 62 L38 60" stroke="#00968f" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M34 24 L36 29 L41 31 L36 33 L34 38 L32 33 L27 31 L32 29 Z" stroke="#00968f" stroke-width="1.8" stroke-linejoin="round"/>
+        <path d="M94 26 L95.5 29.5 L99 31 L95.5 32.5 L94 36 L92.5 32.5 L89 31 L92.5 29.5 Z" stroke="#00968f" stroke-width="1.6" stroke-linejoin="round"/>
+      </svg>`,
+
+      // 6. オプション施工（水まわり・クロス等のプラスケア）
+      '6': `<svg viewBox="0 0 120 80" class="w-28 h-20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M48 16 C48 16 32 36 32 47 A16 16 0 0 0 64 47 C64 36 48 16 48 16 Z" stroke="#00968f" stroke-width="2.2" stroke-linejoin="round"/>
+        <path d="M42 48 A7 7 0 0 0 49 55" stroke="#00968f" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="80" cy="46" r="14" stroke="#1E293B" stroke-width="2.2"/>
+        <line x1="80" y1="39" x2="80" y2="53" stroke="#1E293B" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="73" y1="46" x2="87" y2="46" stroke="#1E293B" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>`,
+
+      // 7. 確認／仕上げ（チェックリストと仕上がり点検）
+      '7': `<svg viewBox="0 0 120 80" class="w-28 h-20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="34" y="14" width="44" height="54" rx="5" stroke="#1E293B" stroke-width="2.2"/>
+        <path d="M46 14 L46 10 L66 10 L66 14" stroke="#1E293B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M43 31 L46.5 34.5 L53 28" stroke="#00968f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="58" y1="31" x2="69" y2="31" stroke="#94A3B8" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M43 45 L46.5 48.5 L53 42" stroke="#00968f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="58" y1="45" x2="69" y2="45" stroke="#94A3B8" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="82" cy="52" r="9" fill="#FFFFFF" stroke="#00968f" stroke-width="2.2"/>
+        <line x1="88.5" y1="58.5" x2="95" y2="65" stroke="#00968f" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>`,
+
+      // 8. お引渡し（住まいと鍵のお渡し）
+      '8': `<svg viewBox="0 0 120 80" class="w-28 h-20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M24 38 L60 14 L96 38" stroke="#00968f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M34 34 L34 64 L86 64 L86 34" stroke="#1E293B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="51" cy="48" r="7" stroke="#00968f" stroke-width="2.2"/>
+        <line x1="58" y1="48" x2="75" y2="48" stroke="#00968f" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="68" y1="48" x2="68" y2="54" stroke="#00968f" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="73" y1="48" x2="73" y2="53" stroke="#00968f" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>`
+    };
+
+    const workSteps = [
+      { no: '1', title: 'お立合い', desc: '※当日朝にお立会いいただき、施工箇所の確認が完了しましたら、外出していただいて構いません。（作業完了まで入室いただけない場合がございます。）' },
+      { no: '2', title: '清掃', desc: 'コーティング作業前に、しっかりと清掃を行います。清掃をする過程で、傷などがないか確認もしていきます。' },
+      { no: '3', title: '養生', desc: '施工場所の巾木や建具、家具などに液剤が飛散付着しないよう、マスキングテープなどを用いて丁寧に養生いたします。' },
+      { no: '4', title: '簡易補修', desc: '傷、へこみなどが見つかった場合は、補修可能なものであれば補修剤、着色剤などで補修いたします。※補修困難な傷はお客様へご連絡いたします。' },
+      { no: '5', title: '施工', desc: 'ご契約いただいたコーティング種類に合わせた液剤、手順で施工いたします。（気温、湿度などにより作業時間にズレが生じる場合がございます。）' },
+      { no: '6', title: 'オプション施工', desc: 'オプションコーティングをお申込みいただいている場合は、同日に施工いたします。（状況により、オプション施工が先になる場合もございます）' },
+      { no: '7', title: '確認／仕上げ', desc: '硬化後、施工箇所すべての仕上がり状態を確認してから、養生の取り外しをいたします。作業施工完了時間の目途がつき次第、ご連絡いたします。' },
+      { no: '8', title: 'お引渡し', desc: '施工箇所をご確認いただいた後に各所の取り扱い方法などについてご案内し、お引渡しとなります。' }
+    ];
+
+    document.getElementById('workStepsGrid').innerHTML = workSteps.map(w => `<div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-xs flex flex-col">
+      <div class="flex items-center gap-2.5 mb-3">
+        <span class="w-7 h-7 rounded-full bg-aline-teal text-white text-xs font-extrabold flex items-center justify-center shrink-0">${w.no}</span>
+        <h3 class="font-extrabold text-base text-slate-900">${w.title}</h3>
+      </div>
+      <div class="h-24 rounded-xl bg-slate-50/80 border border-slate-100 flex items-center justify-center mb-3.5">
+        ${workStepIcons[w.no]}
+      </div>
+      <p class="text-[13.5px] text-slate-600 leading-relaxed">${w.desc}</p>
+    </div>`).join('');
+
+    // 4. スマホハンバーガーメニュー開閉処理
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const iconHam = document.getElementById('iconHamburger');
+    const iconClose = document.getElementById('iconClose');
+
+    function toggleMenu(open) {
+      mobileMenu.classList.toggle('hidden', !open);
+      iconHam.classList.toggle('hidden', open);
+      iconClose.classList.toggle('hidden', !open);
+      menuBtn.setAttribute('aria-expanded', String(open));
+    }
+    menuBtn.addEventListener('click', () => toggleMenu(mobileMenu.classList.contains('hidden')));
+    document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', () => toggleMenu(false)));
+  </script>
+</body>
+</html>
